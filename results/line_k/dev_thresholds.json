@@ -1,0 +1,6 @@
+{
+  "line_a_probe_aggressive": 0.05,
+  "line_a_probe_balanced": 0.75,
+  "quote_bow_aggressive": 0.05,
+  "quote_bow_balanced": 0.6
+}

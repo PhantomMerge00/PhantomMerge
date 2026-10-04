@@ -1,0 +1,17 @@
+{
+  "model_manifest_id": "mixtral_shopping_v1",
+  "model_id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "weights_path": "${PHANTOM_MERGE_ROOT}/runtime/.cache/huggingface/hub/Mixtral-8x22B-Instruct-v0.1",
+  "tokenizer": "LlamaTokenizer",
+  "chat_template": "mistral",
+  "precision": "bfloat16",
+  "decoding": {"temperature": 0, "top_p": 1.0, "seed": 42, "do_sample": false},
+  "vllm": {"base_url": "http://127.0.0.1:8003/v1"},
+  "shopping_rollout": "data/rollouts/shopping/mixtral_<your_run>/rollout.jsonl",
+  "tau3_gold_exports": {
+    "telecom": "data/rollouts/tau3_exports/telecom_mixtral_1k_pm_gold_export/telecom_mixtral_1k_pm_gold.jsonl",
+    "airline": "data/rollouts/tau3_exports/airline_mixtral_1k_pm_gold_export/airline_mixtral_1k_pm_gold.jsonl"
+  },
+  "jspace_lens": "results/jspace/J_l_mixtral_L49.pt",
+  "notes": "TEMPLATE — edit paths, merge into model_manifest.json, set CCER_MODEL_MANIFEST_ID"
+}

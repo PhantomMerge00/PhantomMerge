@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CCER Counterfactual",
+  "type": "object",
+  "required": ["root_id", "pair_id", "condition_id", "operator_version", "estimand", "edit_manifest", "held_fixed", "split"]
+}

@@ -1,0 +1,8 @@
+# P2 vendor baselines (FActScore vendor AtomicFactGenerator)
+rank_bm25>=0.2.2
+spacy>=3.7.0
+nltk>=3.8
+# After pip install:
+#   python -m spacy download en_core_web_sm
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
+# (run_factscore also auto-downloads punkt/punkt_tab on first start)

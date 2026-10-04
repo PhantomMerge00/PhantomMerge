@@ -1,0 +1,36 @@
+{
+  "schema": "ccer_replication_data_sync_v1",
+  "description": "Large files to sync separately (not in git). Paths are neutral placeholders under data/.",
+  "protocol_frozen_across_models": [
+    "data/gold/shopping/merged_v1/",
+    "results/split_manifest.json",
+    "results/cohort_manifest.json",
+    "results/agr/split_manifest_agr.json",
+    "results/line_a/v3/cohort_manifest.json",
+    "results/line_k/dev_thresholds.json"
+  ],
+  "model_specific_must_recompute": [
+    "data/rollouts/shopping/*/rollout.jsonl",
+    "data/rollouts/tau3_exports/*_pm_gold_export/*.jsonl",
+    "results/line_a/**/instance_activations/",
+    "results/jspace/J_l_*_L49.pt",
+    "results/line_k/probe_scores.jsonl",
+    "results/prism/prism_audit.jsonl",
+    "results/tau3/**/instance_activations/",
+    "results/tau3/shopping_frozen_probe.joblib",
+    "runtime/.cache/huggingface/hub/"
+  ],
+  "qwen_reference_checkpoints": {
+    "shopping_rollout": "data/rollouts/shopping/shopping_qwen3-32b_rollout/rollout.jsonl",
+    "telecom_gold": "data/rollouts/tau3_exports/telecom_qwen_1k_pm_gold_export/telecom_qwen_1k_pm_gold.jsonl",
+    "airline_gold": "data/rollouts/tau3_exports/airline_qwen_1k_pm_gold_export/airline_qwen_1k_pm_gold.jsonl",
+    "prism_audit": "results/prism/prism_audit.jsonl",
+    "detector_comparison": "results/agr/DETECTOR_COMPARISON_SUMMARY.json"
+  },
+  "expected_headline_numbers_shopping_test_274": {
+    "tfidf_auroc": 0.774,
+    "probe_auroc": 0.888,
+    "agr_rho_auroc": 0.898,
+    "bind_surprise_auroc": 0.962
+  }
+}

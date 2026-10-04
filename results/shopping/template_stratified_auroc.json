@@ -1,0 +1,188 @@
+{
+  "schema": "shopping_template_stratified_auroc_v1",
+  "protocol": {
+    "cohort": "Line-A v3 test (require_activation=True)",
+    "template_granularity": "quote_fingerprint (normalize_quote_for_bow + NUM/ID masking)",
+    "overlap_definition": "test claim fingerprint appears in any train claim (PM or CB)",
+    "scores": {
+      "L49": "frozen LINE_K_PROBE_SCORES p_pm",
+      "bind_surprise": "prism_audit.jsonl bind_surprise",
+      "tfidf": "train-fit TF-IDF quote-only logistic, eval test only"
+    },
+    "uncertainty": "trajectory-cluster bootstrap B=2000 per stratum",
+    "interpretation": "exploratory; non-overlap n smaller — do not pool with tau3 template splits"
+  },
+  "test_summary": {
+    "n_claims": 274,
+    "n_overlap": 181,
+    "n_non_overlap": 93,
+    "overlap_rate": 0.6605839416058394
+  },
+  "full_test": {
+    "representational_L49": {
+      "auroc": 0.8876032159930465,
+      "ci95": [
+        0.846038261608437,
+        0.9239225076330813
+      ]
+    },
+    "bind_surprise": {
+      "auroc": 0.9617557583659279,
+      "ci95": [
+        0.9396792253317833,
+        0.9787420886892536
+      ]
+    },
+    "tfidf_quote": {
+      "auroc": 0.7736581920903955,
+      "ci95": [
+        0.7098724439379764,
+        0.8282653927337454
+      ]
+    }
+  },
+  "strata": [
+    {
+      "stratum": "overlap",
+      "n_claims": 181,
+      "n_pm": 108,
+      "n_clean": 73,
+      "n_trajectories": 177,
+      "pm_rate": 0.5966850828729282,
+      "representational_L49_p_pm": {
+        "auroc": 0.9033485540334856,
+        "ci95": [
+          0.8603294683257918,
+          0.9420677800962727
+        ],
+        "n_boot_effective": 2000
+      },
+      "bind_surprise": {
+        "auroc": 0.9715880263825469,
+        "ci95": [
+          0.9496772800868886,
+          0.9886204059698434
+        ],
+        "n_boot_effective": 2000
+      },
+      "tfidf_quote_baseline": {
+        "auroc": 0.782724505327245,
+        "ci95": [
+          0.7063745681078756,
+          0.8508599769733294
+        ],
+        "n_boot_effective": 2000
+      },
+      "auroc_point_check": {
+        "L49": 0.9033485540334856,
+        "bind": 0.9715880263825469,
+        "tfidf": 0.782724505327245
+      },
+      "bind_minus_tfidf_auroc": {
+        "auroc_a": 0.9715880263825469,
+        "auroc_b": 0.782724505327245,
+        "diff": 0.1888635210553019,
+        "diff_ci_low": 0.11971275252525242,
+        "diff_ci_high": 0.26361334297753786,
+        "significant_at_05": true,
+        "n_boot_effective": 2000,
+        "n_boot_requested": 2000,
+        "method": "cluster_bootstrap_trajectory"
+      },
+      "l49_minus_tfidf_auroc": {
+        "auroc_a": 0.9033485540334856,
+        "auroc_b": 0.782724505327245,
+        "diff": 0.12062404870624055,
+        "diff_ci_low": 0.04575415195067679,
+        "diff_ci_high": 0.1981911040976092,
+        "significant_at_05": true,
+        "n_boot_effective": 2000,
+        "n_boot_requested": 2000,
+        "method": "cluster_bootstrap_trajectory"
+      }
+    },
+    {
+      "stratum": "non_overlap",
+      "n_claims": 93,
+      "n_pm": 48,
+      "n_clean": 45,
+      "n_trajectories": 80,
+      "pm_rate": 0.5161290322580645,
+      "representational_L49_p_pm": {
+        "auroc": 0.8824074074074073,
+        "ci95": [
+          0.8050730968974972,
+          0.940587384878989
+        ],
+        "n_boot_effective": 2000
+      },
+      "bind_surprise": {
+        "auroc": 0.950462962962963,
+        "ci95": [
+          0.9066988031914894,
+          0.9836737379162191
+        ],
+        "n_boot_effective": 2000
+      },
+      "tfidf_quote_baseline": {
+        "auroc": 0.7555555555555555,
+        "ci95": [
+          0.6450004274965799,
+          0.8552518939393938
+        ],
+        "n_boot_effective": 2000
+      },
+      "auroc_point_check": {
+        "L49": 0.8824074074074073,
+        "bind": 0.950462962962963,
+        "tfidf": 0.7555555555555555
+      },
+      "bind_minus_tfidf_auroc": {
+        "auroc_a": 0.950462962962963,
+        "auroc_b": 0.7555555555555555,
+        "diff": 0.19490740740740742,
+        "diff_ci_low": 0.10135074938268417,
+        "diff_ci_high": 0.3019691180912109,
+        "significant_at_05": true,
+        "n_boot_effective": 2000,
+        "n_boot_requested": 2000,
+        "method": "cluster_bootstrap_trajectory"
+      },
+      "l49_minus_tfidf_auroc": {
+        "auroc_a": 0.8824074074074073,
+        "auroc_b": 0.7555555555555555,
+        "diff": 0.12685185185185177,
+        "diff_ci_low": 0.020081894012559862,
+        "diff_ci_high": 0.23862454072538103,
+        "significant_at_05": true,
+        "n_boot_effective": 2000,
+        "n_boot_requested": 2000,
+        "method": "cluster_bootstrap_trajectory"
+      }
+    }
+  ],
+  "full_test_paired_diff": {
+    "bind_minus_tfidf": {
+      "auroc_a": 0.9617557583659279,
+      "auroc_b": 0.7736581920903955,
+      "diff": 0.1880975662755323,
+      "diff_ci_low": 0.13286729289248908,
+      "diff_ci_high": 0.25018060740591264,
+      "significant_at_05": true,
+      "n_boot_effective": 2000,
+      "n_boot_requested": 2000,
+      "method": "cluster_bootstrap_trajectory"
+    },
+    "l49_minus_tfidf": {
+      "auroc_a": 0.8876032159930465,
+      "auroc_b": 0.7736581920903955,
+      "diff": 0.11394502390265093,
+      "diff_ci_low": 0.05367107813210836,
+      "diff_ci_high": 0.18016599090945382,
+      "significant_at_05": true,
+      "n_boot_effective": 2000,
+      "n_boot_requested": 2000,
+      "method": "cluster_bootstrap_trajectory"
+    }
+  }
+}

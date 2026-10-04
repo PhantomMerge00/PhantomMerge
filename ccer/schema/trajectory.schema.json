@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CCER Trajectory",
+  "type": "object",
+  "required": [
+    "root_id", "trajectory_id", "raw_ref", "split", "group_id", "annotation_version",
+    "messages_raw", "messages_final_call", "model_manifest_id", "input_hash",
+    "actions", "commitment", "text_anchor", "evidence", "claims", "eligible", "exclusion_reason"
+  ]
+}

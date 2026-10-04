@@ -1,0 +1,82 @@
+{
+  "schema": "phantom_merge_results_bundle_v1",
+  "generated_at_utc": "2026-10-04T04:15:51.807668+00:00",
+  "n_files": 15,
+  "files": [
+    {
+      "path": "results/split_manifest.json",
+      "sha256": "a1333d94ac1768a17af17689286e129e2e11bf70d0b9c2e1162e51f9c7d16986",
+      "source": "artifacts/ccer/split_manifest.json"
+    },
+    {
+      "path": "results/cohort_manifest.json",
+      "sha256": "5ab43cd27501cfd5826e895820aef78d0881232ac75f78ac5916e59af78178c2",
+      "source": "artifacts/ccer/cohort_manifest.json"
+    },
+    {
+      "path": "results/model_manifest.json",
+      "sha256": "5051b6884cfdcf4545adcd69307797305e710e30286459905faea15fe7afef5e",
+      "source": "artifacts/ccer/model_manifest.json"
+    },
+    {
+      "path": "results/agr/split_manifest_agr.json",
+      "sha256": "6fc151620d2d510112b13fd5d8b90b31d94e9e6b2fb34f31ee04f3a71864ecdd",
+      "source": "artifacts/ccer/agr/split_manifest_agr.json"
+    },
+    {
+      "path": "results/line_k/dev_thresholds.json",
+      "sha256": "d91ea707b77f3b80bfbaa15c454010230617d36662e0b5261192f9056d1047a0",
+      "source": "artifacts/ccer/line_k/dev_thresholds.json"
+    },
+    {
+      "path": "results/line_a/v3/cohort_manifest.json",
+      "sha256": "754133cfd3a992350920ae4d72276740a2a643a099967caa183f8a73b04b3212",
+      "source": "artifacts/ccer/line_a/v3/cohort_manifest.json"
+    },
+    {
+      "path": "results/agr/DETECTOR_COMPARISON_SUMMARY.json",
+      "sha256": "36736df279ebf0fd27ab79c6d792c450f208021addf25d28955940d03b286838",
+      "source": "artifacts/ccer/agr/DETECTOR_COMPARISON_SUMMARY.json"
+    },
+    {
+      "path": "results/DETECTION_METRICS_REGISTRY.json",
+      "sha256": "305188e2a2a216217317ce7a2b99bae1805bf2e51fecda9aabee887559ffa5b3",
+      "source": "artifacts/ccer/DETECTION_METRICS_REGISTRY.json"
+    },
+    {
+      "path": "results/prism/prism_audit.jsonl",
+      "sha256": "08d94c2a23391aef7b173c9b071f58bfd440efa06dede96359fdc16fb3cd6f22",
+      "source": "artifacts/ccer/prism/prism_audit.jsonl"
+    },
+    {
+      "path": "results/shopping/template_stratified_auroc.json",
+      "sha256": "0e17b5710b6fcb884505d7f716fb590f114768586d4543f934fa04959f4c1381",
+      "source": "artifacts/ccer/shopping/template_stratified_auroc.json"
+    },
+    {
+      "path": "results/agr/TARGET_FUSION_CROSSOVER.json",
+      "sha256": "4df62aa934589b78e6611d4d9a09bd6ab75bbf26f29309c26128ef04cb4e6498",
+      "source": "artifacts/ccer/agr/TARGET_FUSION_CROSSOVER.json"
+    },
+    {
+      "path": "results/rq3/FAC_BRANCH_STATS.json",
+      "sha256": "2fe5f96a73167c68d194659d435a944f227ced146ceca9574bc3884253f9def2",
+      "source": "artifacts/ccer/rq3/FAC_BRANCH_STATS.json"
+    },
+    {
+      "path": "results/prism_l_plus/method_comparison_summary.json",
+      "sha256": "c4114fe2534a9702eb86c9884fb36c91f8c388af3a68b6af4047bc3567da6ade",
+      "source": "artifacts/ccer/prism_l_plus/method_comparison_summary.json"
+    },
+    {
+      "path": "results/rq2/table2_prf_audit/TABLE2_MISSING_PRF_AUDIT.json",
+      "sha256": "1ec558117a555a0114ecc016e79b5bb2522453c0f1c5ed7e67ef72a89a3e5e1d",
+      "source": "artifacts/ccer/rq2/table2_prf_audit/TABLE2_MISSING_PRF_AUDIT.json"
+    },
+    {
+      "path": "results/rq2/table2_prf_audit/per_claim_scores_test274.jsonl",
+      "sha256": "f45a6faa3322b60fcd68e7ac41daebba7fb9f35013c6e59fe77c53e5364f486b",
+      "source": "artifacts/ccer/rq2/table2_prf_audit/per_claim_scores_test274.jsonl"
+    }
+  ]
+}

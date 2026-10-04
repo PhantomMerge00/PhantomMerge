@@ -1,0 +1,17 @@
+{
+  "model_manifest_id": "qwen3-32b_shopping_v1",
+  "model_id": "Qwen/Qwen3-32B",
+  "weights_path": "${PHANTOM_MERGE_ROOT}/runtime/.cache/huggingface/hub/Qwen3-32B",
+  "tokenizer": "Qwen3Tokenizer",
+  "chat_template": "qwen3",
+  "precision": "bfloat16",
+  "decoding": {"temperature": 0, "top_p": 1.0, "seed": 42, "do_sample": false},
+  "vllm": {"base_url": "http://127.0.0.1:8003/v1", "enable_thinking": false},
+  "shopping_rollout": "data/rollouts/shopping/shopping_qwen3-32b_rollout/rollout.jsonl",
+  "tau3_gold_exports": {
+    "telecom": "data/rollouts/tau3_exports/telecom_qwen_1k_pm_gold_export/telecom_qwen_1k_pm_gold.jsonl",
+    "airline": "data/rollouts/tau3_exports/airline_qwen_1k_pm_gold_export/airline_qwen_1k_pm_gold.jsonl"
+  },
+  "jspace_lens": "results/jspace/J_l_qwen32b_L49.pt",
+  "notes": "Reference profile — paper RQ1–RQ3 Qwen numbers"
+}

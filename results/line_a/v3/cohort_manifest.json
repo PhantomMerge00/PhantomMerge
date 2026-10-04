@@ -1,0 +1,4407 @@
+{
+  "schema": "line_a_v3_clean_expansion_v1",
+  "seed": 42,
+  "exclude_incremental_trajectories": true,
+  "targets": {
+    "train": 350,
+    "dev": 50,
+    "test": 125
+  },
+  "per_split": {
+    "train": {
+      "available": 651,
+      "target": 350,
+      "sampled": 350
+    },
+    "dev": {
+      "available": 205,
+      "target": 50,
+      "sampled": 50
+    },
+    "test": {
+      "available": 205,
+      "target": 125,
+      "sampled": 125
+    }
+  },
+  "n_sampled_trajectories": 525,
+  "n_pseudo_instances": 486,
+  "selected_trajectory_ids": [
+    "shop_I_105400cac67094b4",
+    "shop_I_ad40ea96144d90cf",
+    "shop_I_3f464b51efe39f44",
+    "shop_I_b17a3672083f1e7a",
+    "shop_I_3de70a0eabfef09c",
+    "shop_I_0b2a738956924e26",
+    "shop_I_2ea7dc7c171e57a6",
+    "shop_I_24e32bee5e3c2019",
+    "shop_I_cf2caa2abe31f59c",
+    "shop_I_a958885f9ac385ca",
+    "shop_I_90c4a767d1daf11a",
+    "shop_I_1377f291b3b3d796",
+    "shop_I_61117329345d86ad",
+    "shop_I_97e59014bb4a16a4",
+    "shop_D_342bae4f2a556b8e",
+    "shop_I_3c4a7beff9ee241f",
+    "shop_I_658f14412cc4948f",
+    "shop_D_3d54dcb466190399",
+    "shop_I_e19fd271ff62da56",
+    "shop_I_5b283cae434b547c",
+    "shop_I_6af98f79436aaf2b",
+    "shop_I_0a22879d82558980",
+    "shop_I_cb764a2c6b67e4a4",
+    "shop_D_0212814077d02a70",
+    "shop_I_b63066a9f5103539",
+    "shop_I_1c482a57084ca375",
+    "shop_I_622f413a7aeed3a1",
+    "shop_I_72953b7b8cb80a7d",
+    "shop_D_1d3489c2bb4d75d7",
+    "shop_I_2a8eba54e85713b6",
+    "shop_I_76536feea567fc60",
+    "shop_I_a961710d40eaedfd",
+    "shop_I_8e08462f40c40c54",
+    "shop_I_b02a6a0eaf80c091",
+    "shop_I_a531d967c8814ec4",
+    "shop_I_ae14ac72ee7c029f",
+    "shop_I_a60ff57f64d939fb",
+    "shop_D_c2d38a439b229041",
+    "shop_I_9887b85c4a3c29d1",
+    "shop_I_b2d29f48e134148f",
+    "shop_I_21fd93d87ded5082",
+    "shop_I_12ebaf076106f984",
+    "shop_D_f6fe938725abe3b7",
+    "shop_I_a6177c471094876d",
+    "shop_I_9971e7dd182c14fb",
+    "shop_I_3501f47812ea9fdf",
+    "shop_I_81bcbadd132a009f",
+    "shop_I_93b06f316872f1e7",
+    "shop_I_71a8c47da70aa976",
+    "shop_I_bbed379a39b8b111",
+    "shop_I_2dfcb62640bf9b67",
+    "shop_I_f7ef38acc42e3ebe",
+    "shop_I_c172b41461ce2f4c",
+    "shop_I_32f3e99bfd3bbafe",
+    "shop_I_0486a8bd75af337f",
+    "shop_I_551a88217e3335fc",
+    "shop_I_0caf38e1c674bac3",
+    "shop_I_6bd8451e7d1127f0",
+    "shop_D_f9058938e8f53b05",
+    "shop_I_410ffaf0f86492a7",
+    "shop_I_da4d4608c44c696b",
+    "shop_D_1f5213c679a6f6f8",
+    "shop_I_e868eb29c9ce9f14",
+    "shop_I_7fbd1779ea068450",
+    "shop_I_538eb0e9c2aa7f63",
+    "shop_I_449f90e94e3853a5",
+    "shop_I_818b7f76e86725ac",
+    "shop_I_dc6c9329fa0dbbe3",
+    "shop_I_0ff289feb373a879",
+    "shop_I_6fc06040609c5352",
+    "shop_I_05a53ae99d1f2280",
+    "shop_I_3025af8a7505bb86",
+    "shop_I_7f549607dd4b26c6",
+    "shop_I_65cdfb93df32481a",
+    "shop_D_3ea98f27c8cb70cf",
+    "shop_I_4dad2adf34251b2e",
+    "shop_I_6255eb52247b9d2b",
+    "shop_I_c29207350485e1d9",
+    "shop_I_7b13583ecaf40ea6",
+    "shop_I_34331ac4b82f0da9",
+    "shop_I_2e64fc175fb4bc51",
+    "shop_I_a2f036e6e565ff01",
+    "shop_I_789a705dbe1eec8b",
+    "shop_D_0b99003bca8a5db4",
+    "shop_I_9f987fc28bb63d93",
+    "shop_I_422080d5ff13f303",
+    "shop_I_7307b6d97d3446ee",
+    "shop_I_a585acf17a3ac2df",
+    "shop_I_0c34835a2e984300",
+    "shop_I_8fcdf04e2d1392fa",
+    "shop_I_07009b847d539aff",
+    "shop_I_b47c91613a2c0d32",
+    "shop_D_72ad9c9967792bb7",
+    "shop_I_e7ff847fffd6114d",
+    "shop_I_e09960ef48b479f6",
+    "shop_I_0bab10595cd196a9",
+    "shop_I_cef693935d13b18f",
+    "shop_I_938a48c0b6704cea",
+    "shop_I_276a6180461c6191",
+    "shop_D_39499b8eef95ea14",
+    "shop_I_e96f6b20d781b241",
+    "shop_I_c184e8e11d0ac395",
+    "shop_I_086122855fed6012",
+    "shop_I_f024793955777917",
+    "shop_I_fc8fb55595d67b28",
+    "shop_I_83b23d1a0c87adbd",
+    "shop_I_041ccbd0a0a7805e",
+    "shop_I_65def16ab08c1755",
+    "shop_I_50d9c9f55e69cbb0",
+    "shop_I_3e8637c1b2c0958b",
+    "shop_I_4106e5a717fbd4a7",
+    "shop_I_c819245a52a71f12",
+    "shop_D_fb156f035c8b598c",
+    "shop_I_07cf4b67886f7e3b",
+    "shop_I_1731de51659fc475",
+    "shop_I_902ce066049674df",
+    "shop_I_db5f6d0b4b7040a9",
+    "shop_I_535ac5b96b1641b7",
+    "shop_I_2a0fc51c22bf5c82",
+    "shop_I_146f5547535d6659",
+    "shop_I_010110e021ef3b56",
+    "shop_I_e71d79a629a20ae3",
+    "shop_I_66dcd60992582a65",
+    "shop_I_4bc9859cb5fb3528",
+    "shop_I_2cb89a31e0e023f8",
+    "shop_I_8844688068533e53",
+    "shop_D_fe56e299feedb551",
+    "shop_I_e33bbae425a71f8e",
+    "shop_I_02c0f871edf522d7",
+    "shop_I_879a57ce771dbf26",
+    "shop_I_4e3055416d44efaa",
+    "shop_I_0f6f21393f680d09",
+    "shop_I_71a9b9e54966210c",
+    "shop_I_a6bd7e358a90b01d",
+    "shop_I_dd3d3bb31f85e15f",
+    "shop_I_a1007eccc22b9f44",
+    "shop_I_4084e1fb4c8dc344",
+    "shop_I_3fccd6b5c2ec9298",
+    "shop_I_da4afe75e16d8886",
+    "shop_I_380ca1c3e4db72e4",
+    "shop_I_d37f2c9e386686a9",
+    "shop_I_bacbcf14f46ab05b",
+    "shop_I_c38039e1d65d176b",
+    "shop_I_ab102a941e761907",
+    "shop_I_92803fadff595a3f",
+    "shop_I_1605bb0c9dbb528d",
+    "shop_I_88c53c6bb0b28919",
+    "shop_I_233af53cfcf4f4f9",
+    "shop_I_daf34fbf374e68d3",
+    "shop_I_38c192187829d2c9",
+    "shop_I_a5bc1533cfb71eae",
+    "shop_I_04d548bd4c60ff93",
+    "shop_I_75030d7a04c4966f",
+    "shop_I_177b7f84da00dc50",
+    "shop_I_c1c5961c321c2f3f",
+    "shop_I_343addda03de1678",
+    "shop_I_5909b5757aa77192",
+    "shop_I_16ad2581e50d0f3c",
+    "shop_I_d31f1a326ea9bd3e",
+    "shop_I_440f112ea7211ab6",
+    "shop_I_8e31ea4563513584",
+    "shop_I_bacce5117d2e33dc",
+    "shop_I_9344c1a979b9125b",
+    "shop_I_13251cf5584de25d",
+    "shop_I_412eb02ec6985d31",
+    "shop_I_0fd7aa9a133a4606",
+    "shop_I_1e2d584d09946d15",
+    "shop_I_e3171739751fbe95",
+    "shop_I_87947921c5e9fa45",
+    "shop_I_8ca46d39d1ada24c",
+    "shop_I_e7069c90e3d18e3e",
+    "shop_I_926e838ae727b729",
+    "shop_I_1ff8790ec2187463",
+    "shop_I_439b1415ea42c335",
+    "shop_I_be21761621d36a68",
+    "shop_D_ad24d00e7bd39902",
+    "shop_I_7ec74fc471419273",
+    "shop_I_f8285b7a41c28b8e",
+    "shop_I_9a8c884306e6d25a",
+    "shop_I_5cfe55470c7dba13",
+    "shop_D_a934d80eb6ef099a",
+    "shop_I_af4444e2a5082774",
+    "shop_I_b99a52bbe8edbfc2",
+    "shop_I_76561021c10b3b7d",
+    "shop_I_d4f019d11215d82d",
+    "shop_I_30dc3f2aa44f3b76",
+    "shop_I_b0af82039e132502",
+    "shop_I_512e84264fdceae2",
+    "shop_I_3cafdabd6ebf793e",
+    "shop_I_93fe925612cec11d",
+    "shop_I_94be5ee7182e690b",
+    "shop_I_21c944a2eb38a6eb",
+    "shop_I_b029a21189113fa3",
+    "shop_I_364be7d2ad74279f",
+    "shop_I_30d95398949e4446",
+    "shop_I_2b69595997e8cb45",
+    "shop_I_a9f595058220f7b1",
+    "shop_I_ed66e1fb6534d1cb",
+    "shop_I_0a02187bb43e812a",
+    "shop_D_7b763eb1b8015460",
+    "shop_I_31acd45ae9cb7537",
+    "shop_I_a61351b220e39050",
+    "shop_I_65e30fd0cd9b8f34",
+    "shop_I_37ade7c1697387d9",
+    "shop_D_b6d16f980a123458",
+    "shop_D_69b679c10d752f95",
+    "shop_I_bf32584356687542",
+    "shop_I_1b5b3a07eba7d443",
+    "shop_I_7442dd42efc50e67",
+    "shop_I_f4f9802f921604c3",
+    "shop_I_14cd271a9c9530ee",
+    "shop_I_7ae5979a2072cb4b",
+    "shop_I_ae2a0335ef7db9e8",
+    "shop_D_c68704d70d917b9c",
+    "shop_I_222fb0c88ebdc52e",
+    "shop_I_5d670433caf1dc04",
+    "shop_I_056ed90b17fd6414",
+    "shop_I_7e20559dccaec5a8",
+    "shop_I_76ad72552fd282c3",
+    "shop_I_911dc7f94675192d",
+    "shop_I_f3ad18755179ce71",
+    "shop_I_e08c6fb6704195b8",
+    "shop_I_3a898e5bba6ab0e5",
+    "shop_I_85b73a049ebe94d1",
+    "shop_I_011eac2d29677370",
+    "shop_I_a2562d67a0edcc5f",
+    "shop_I_a2ae3e4f4098d6b2",
+    "shop_I_0af2143b95c007ae",
+    "shop_I_5b7ca2feae50a216",
+    "shop_I_be7a56eee57a1ee9",
+    "shop_I_16e81dfc23eb6974",
+    "shop_I_65cf1fc89e49f4a9",
+    "shop_I_00d5ab610aa32db8",
+    "shop_I_ae85b9c73672a917",
+    "shop_I_b7ea4ae0f88b2fdc",
+    "shop_I_ce12f09e72a4bbfb",
+    "shop_I_35bf1ea68e605dfd",
+    "shop_I_da41bc3ca21c1fb6",
+    "shop_I_025e21d5a3d40d01",
+    "shop_I_1229d18babe66185",
+    "shop_D_df7deae4b4006533",
+    "shop_I_21739a8f5bb50dd7",
+    "shop_I_f0adaa4dae994e03",
+    "shop_D_3bc3cfad63a11863",
+    "shop_I_cc6bfbe9a4fb8e64",
+    "shop_I_f0b1f5d07a440104",
+    "shop_I_8027872cd8639485",
+    "shop_D_442a4da228351594",
+    "shop_I_0f25b4a3cf59daec",
+    "shop_I_dac3cd6036117e15",
+    "shop_I_42edc32e609d09b6",
+    "shop_I_50f568feb1be9c66",
+    "shop_I_62f8b8cb5ddc5445",
+    "shop_I_daf98a34ff5656d9",
+    "shop_I_0a54a730182c0950",
+    "shop_I_15257d599de79c9e",
+    "shop_I_768170c4dcdecf2d",
+    "shop_I_b165da8543186456",
+    "shop_D_a677162810137efd",
+    "shop_D_b3faf634ee15c777",
+    "shop_I_59d8024f0172ac61",
+    "shop_D_ed02671a136393c5",
+    "shop_I_615e4253d49ee485",
+    "shop_I_a1ef6216c3cc6e9c",
+    "shop_I_60d142a9162b5e85",
+    "shop_I_c518b1bb0fa68fed",
+    "shop_I_1795c0d40635bb61",
+    "shop_I_4b84a22698615f66",
+    "shop_I_a5b7615bc40654b4",
+    "shop_I_716a88ec6c1d235d",
+    "shop_I_1535867a179b3f25",
+    "shop_I_2c1682ed81645b0d",
+    "shop_I_0dc91ae1550643ea",
+    "shop_I_6e90afee9981aafe",
+    "shop_I_26b32f698fdd84bd",
+    "shop_I_6187f20769b31ac6",
+    "shop_I_62154827bdf1fa0b",
+    "shop_I_42f83ac3348ab2c8",
+    "shop_I_7c7ea90a7546b120",
+    "shop_I_47b157746acbf893",
+    "shop_I_60fb66357445c7d1",
+    "shop_D_9e027a9f223cfbc5",
+    "shop_I_51d38cd159a353b8",
+    "shop_I_61384cc894237306",
+    "shop_D_0848651bccb1e82a",
+    "shop_D_624f48f378543bce",
+    "shop_I_c0b0dc803acb59e8",
+    "shop_I_d733aca4b46694ae",
+    "shop_I_178b4abf9c081dd8",
+    "shop_I_954ded83afc074e0",
+    "shop_I_30de4776188d820a",
+    "shop_I_79067e8da848f591",
+    "shop_I_b3c0a62ac36ed72a",
+    "shop_I_ea0aac6ea2cb939f",
+    "shop_I_11318cea6bccac7d",
+    "shop_I_c03e6bd8b6ea609b",
+    "shop_I_449f7f6e6cc8fb58",
+    "shop_I_5293d66f06288010",
+    "shop_I_55fb5886f5fccf8f",
+    "shop_I_dc676d9f0a13d8b9",
+    "shop_I_967ab42426c6d06a",
+    "shop_I_61e44921186b4990",
+    "shop_D_35a64f103e374412",
+    "shop_I_6e1e0a645944756f",
+    "shop_I_74ca8041e5aaf21f",
+    "shop_I_a349b320bf903361",
+    "shop_I_52bdf5f75f1a5c80",
+    "shop_I_ee84564d5a6c4574",
+    "shop_I_8cde7de7513e3e52",
+    "shop_I_0d168bbd5f6c7413",
+    "shop_I_99f3fd32ed782fb8",
+    "shop_I_5a0a7576bda11ca4",
+    "shop_I_aeead72a3f90189e",
+    "shop_I_f4ff88a8ed778cd1",
+    "shop_D_6c952b80a660c5b0",
+    "shop_I_433b73482fc2bd79",
+    "shop_I_73793c70fe636a4d",
+    "shop_I_edf191d6b88204d7",
+    "shop_I_d1f2b92e35a11bbd",
+    "shop_I_c50df4b8a87853ca",
+    "shop_I_3eea8ac9c56c4fd6",
+    "shop_I_5709af684824dc93",
+    "shop_I_7fef4abdec6d35b5",
+    "shop_D_0d1afe97458a8b2f",
+    "shop_I_a8cf173b1df97081",
+    "shop_D_c3e98fd379bd4547",
+    "shop_I_74dc84610dff6e58",
+    "shop_D_1cb81771ac47ba5a",
+    "shop_I_cd56484a26bbbba1",
+    "shop_I_cef2832f8a69d4b7",
+    "shop_I_4d9a2fbce7531048",
+    "shop_I_c8fd924c9225a94f",
+    "shop_I_1dedacc66fadc41a",
+    "shop_I_ff7fee7702b9c6d3",
+    "shop_I_0eb9c9a633a99f34",
+    "shop_I_cd2864d736c3dd77",
+    "shop_I_17b6e21f0c5d8eb2",
+    "shop_I_baeaf25a9e10b108",
+    "shop_I_a43f2792900d4f57",
+    "shop_I_c1eb0c71fbac8336",
+    "shop_I_c6bc10e2e2d51ce4",
+    "shop_I_154acabf5f116ae5",
+    "shop_I_c680e20b45dee716",
+    "shop_I_a1095c9fc42faed7",
+    "shop_I_44e896b0a4fd046c",
+    "shop_I_c3295ad893c25aab",
+    "shop_D_71a83f6cbefde878",
+    "shop_I_7f6dcabc5131884e",
+    "shop_I_51bb1ac915c6eecf",
+    "shop_I_7e916f0165136f5d",
+    "shop_I_e6c700784bc46c5e",
+    "shop_I_ff401d6fc21ef69c",
+    "shop_I_9cad250b691318eb",
+    "shop_I_3e109b6e442afed6",
+    "shop_I_81c7f90a7dcd5a40",
+    "shop_I_0fc5689d30977203",
+    "shop_I_6c9650a24ca4e919",
+    "shop_I_20ec83fa0f7e6a3b",
+    "shop_I_03a2a74fd875e83e",
+    "shop_D_c03bd33de754cb4a",
+    "shop_I_5766559b180867e8",
+    "shop_I_406d73483c963e3a",
+    "shop_I_05d09e24c4fdbcf9",
+    "shop_I_928c3b6c0ca71cb3",
+    "shop_I_fbadb0ef525d4742",
+    "shop_I_94495e6158cda400",
+    "shop_I_cee63203f4665610",
+    "shop_I_25d75e96a038e842",
+    "shop_I_c44fe630d2fe688c",
+    "shop_I_5f989794b1ce8f31",
+    "shop_I_9e0fcedea8340571",
+    "shop_I_2920fdeb5a201bdf",
+    "shop_I_2ecc753fc768c482",
+    "shop_I_8783de4f441d66d8",
+    "shop_I_d2a2046d4f639813",
+    "shop_I_7c40ee96b3df92b1",
+    "shop_I_29205b796b584fcb",
+    "shop_I_5ff595089457a11b",
+    "shop_I_2e6155491ac82cd7",
+    "shop_I_3af36979330f5e9d",
+    "shop_I_8daac5ea0414fb4f",
+    "shop_I_1f802050e0237845",
+    "shop_I_d8d100025a1ed92f",
+    "shop_I_06aa8e572610b83a",
+    "shop_I_763fde8db872cd7a",
+    "shop_D_4433fbe6fedff347",
+    "shop_D_e36516a1c2bc1fcc",
+    "shop_I_c0f8ef416be48ab1",
+    "shop_I_3e1e4a1220c615dd",
+    "shop_D_055f54d0e82599c4",
+    "shop_I_9601408a234e872f",
+    "shop_I_9e6650c85ebc25f7",
+    "shop_I_680b737caa910f6a",
+    "shop_I_e6f605f518f551b8",
+    "shop_I_63625edfca3f47af",
+    "shop_I_519c43d63c568852",
+    "shop_D_bd69b1553a5684f0",
+    "shop_I_daefd59379311cec",
+    "shop_I_302aabf90424a7d7",
+    "shop_I_63364d7e7c66c2e5",
+    "shop_I_9e3f088cc1ccf4f3",
+    "shop_I_50755ae85942c831",
+    "shop_I_def32fa617a43e75",
+    "shop_I_730822d5855ca212",
+    "shop_I_2d2ce745f311dbbf",
+    "shop_I_f46a872d5fec6aae",
+    "shop_I_34ffdb6c2cb0edde",
+    "shop_I_77ae785f3659d2e0",
+    "shop_I_b099e0971aaa26c0",
+    "shop_I_596dfdde949a061b",
+    "shop_I_b5b37953dcae70b2",
+    "shop_I_93609a057e90603d",
+    "shop_I_c0bd449ccfbb872d",
+    "shop_I_cf9736918376a40d",
+    "shop_I_111a36c4db9d024e",
+    "shop_I_f569ed2f372ca8ba",
+    "shop_I_fac4b2d110b5d841",
+    "shop_I_bb845b86e9a86cef",
+    "shop_I_e0b0effaa74ce35d",
+    "shop_I_8412504c75c8369d",
+    "shop_D_4af09af894749b45",
+    "shop_I_24b75df4b41fc86c",
+    "shop_I_c9ec361fd347836a",
+    "shop_I_f30bf7e5a92ef3b2",
+    "shop_I_f04ca88b37771e37",
+    "shop_I_40c5bdfbaa5cee03",
+    "shop_I_c46bcb4c9c660954",
+    "shop_I_4b8d393e598dea65",
+    "shop_I_38f48dbfab05a76c",
+    "shop_I_9ca1f321eab9f805",
+    "shop_D_fa333e64a477dcd8",
+    "shop_I_17ed07522f82a622",
+    "shop_I_66a23130ee776852",
+    "shop_I_3b355befe4971d2b",
+    "shop_I_37d38256bea6ed42",
+    "shop_D_f3e0fca5c61dfc81",
+    "shop_I_5390f25a1841a71d",
+    "shop_I_c19516c6a832638f",
+    "shop_I_612eb8e812cb2a5f",
+    "shop_I_89233c4589b859f6",
+    "shop_I_98439eaa0ba37038",
+    "shop_I_dad0b2ec5b7b03ca",
+    "shop_I_fa66965d47cf89f9",
+    "shop_I_eca9f983c9ca4aa1",
+    "shop_I_f3a85ad57199894b",
+    "shop_I_c767b7f705c2e9ba",
+    "shop_I_24369eaa023db0a1",
+    "shop_I_32c716faed71d0fd",
+    "shop_D_454ec6e51e756644",
+    "shop_I_6e03e48991759660",
+    "shop_D_a8ef55c08a8cbb3b",
+    "shop_I_68a29b90b50621f8",
+    "shop_I_fd337d372a24be19",
+    "shop_I_fd7fe4f99a64d85f",
+    "shop_I_77f4ec7958e7105b",
+    "shop_I_2fc511db7dbf1c1a",
+    "shop_I_5f54e759eaf76d2a",
+    "shop_I_cbe57f64c1c2e06b",
+    "shop_I_5c2b1cc27bbab8b1",
+    "shop_I_9397403c22e7cf8b",
+    "shop_I_aafb705d57294ab9",
+    "shop_I_33134a1e135ee40e",
+    "shop_I_1f242b7ad21b6936",
+    "shop_I_96c121f3bdbef98d",
+    "shop_I_64f5f051ae203be2",
+    "shop_I_b69ce4f85a4263dc",
+    "shop_I_20781de75f313681",
+    "shop_I_8ad790490da3bcc5",
+    "shop_D_71943fd3c02524bc",
+    "shop_D_84ccdae21aaecd4c",
+    "shop_I_943b12e0f088210a",
+    "shop_I_6e1bfd4e0cade01d",
+    "shop_I_12b5034c1e33f89c",
+    "shop_I_9edfdc297d19bb8f",
+    "shop_I_50e31cfd5d9c5526",
+    "shop_I_090724f74a819c4e",
+    "shop_I_3e42ba04e1bda2ff",
+    "shop_D_c78e574468c927bc",
+    "shop_I_eb237bcc3680f26c",
+    "shop_I_aa95b02c7f0f14de",
+    "shop_I_d9c984873200498f",
+    "shop_I_522daf6b66aed426",
+    "shop_I_43c953ec3aa87cf0",
+    "shop_I_4b9198ed1d203e5b",
+    "shop_I_6bcaee00bc530668",
+    "shop_I_6ac15f83f5bed12c"
+  ],
+  "instances": [
+    {
+      "instance_audit_key": "gold_clean:shop_I_105400cac67094b4",
+      "trajectory_id": "shop_I_105400cac67094b4",
+      "split": "train",
+      "response_quote": "Type C interface: The Hagibis USB C HUB Type-C Docking Station features a Type-C interface, which is ideal for connecting to devices with a Type-C port.",
+      "quote_start": 70,
+      "quote_end": 222
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ad40ea96144d90cf",
+      "trajectory_id": "shop_I_ad40ea96144d90cf",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with LazMall service, which provides a 100% authenticity guarantee, 15-day unconditional returns, and 7-day delivery.",
+      "quote_start": 70,
+      "quote_end": 235
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3f464b51efe39f44",
+      "trajectory_id": "shop_I_3f464b51efe39f44",
+      "split": "train",
+      "response_quote": "Size: s",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b17a3672083f1e7a",
+      "trajectory_id": "shop_I_b17a3672083f1e7a",
+      "split": "train",
+      "response_quote": "Color: Brown",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3de70a0eabfef09c",
+      "trajectory_id": "shop_I_3de70a0eabfef09c",
+      "split": "train",
+      "response_quote": "Material: High-quality carbon steel, ABS plastic, and beech wood",
+      "quote_start": 69,
+      "quote_end": 133
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0b2a738956924e26",
+      "trajectory_id": "shop_I_0b2a738956924e26",
+      "split": "train",
+      "response_quote": "Formulation: Oil-free",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2ea7dc7c171e57a6",
+      "trajectory_id": "shop_I_2ea7dc7c171e57a6",
+      "split": "train",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_24e32bee5e3c2019",
+      "trajectory_id": "shop_I_24e32bee5e3c2019",
+      "split": "train",
+      "response_quote": "Size: 27\"",
+      "quote_start": 70,
+      "quote_end": 79
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cf2caa2abe31f59c",
+      "trajectory_id": "shop_I_cf2caa2abe31f59c",
+      "split": "train",
+      "response_quote": "Size: Large",
+      "quote_start": 69,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a958885f9ac385ca",
+      "trajectory_id": "shop_I_a958885f9ac385ca",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_90c4a767d1daf11a",
+      "trajectory_id": "shop_I_90c4a767d1daf11a",
+      "split": "train",
+      "response_quote": "Color: yellow/white",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1377f291b3b3d796",
+      "trajectory_id": "shop_I_1377f291b3b3d796",
+      "split": "train",
+      "response_quote": "Formulation: Paraben-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_61117329345d86ad",
+      "trajectory_id": "shop_I_61117329345d86ad",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_97e59014bb4a16a4",
+      "trajectory_id": "shop_I_97e59014bb4a16a4",
+      "split": "train",
+      "response_quote": "Plug Specifications: Malaysia/Singapore(3PINs UK Plug)",
+      "quote_start": 70,
+      "quote_end": 124
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_342bae4f2a556b8e",
+      "trajectory_id": "shop_D_342bae4f2a556b8e",
+      "split": "train",
+      "response_quote": "Title: Yamaha NMAX AEROX V1 V2 Rear shock absorbers BASO STYLE 2pcs 305mm Black",
+      "quote_start": 70,
+      "quote_end": 149
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3c4a7beff9ee241f",
+      "trajectory_id": "shop_I_3c4a7beff9ee241f",
+      "split": "train",
+      "response_quote": "Size: Medium",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_658f14412cc4948f",
+      "trajectory_id": "shop_I_658f14412cc4948f",
+      "split": "train",
+      "response_quote": "Material: Stainless steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_3d54dcb466190399",
+      "trajectory_id": "shop_D_3d54dcb466190399",
+      "split": "train",
+      "response_quote": "Title: 1 Pcs 0445120006 Diesel Fuel Injector Fuel Injector Nozzle Common Rail Fuel Injector New for Mercedes-Benz and Mitsubishi 6M60 6M70 ME355278",
+      "quote_start": 70,
+      "quote_end": 217
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e19fd271ff62da56",
+      "trajectory_id": "shop_I_e19fd271ff62da56",
+      "split": "train",
+      "response_quote": "Material: PVC (plastic)",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5b283cae434b547c",
+      "trajectory_id": "shop_I_5b283cae434b547c",
+      "split": "train",
+      "response_quote": "Size: Large",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6af98f79436aaf2b",
+      "trajectory_id": "shop_I_6af98f79436aaf2b",
+      "split": "train",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0a22879d82558980",
+      "trajectory_id": "shop_I_0a22879d82558980",
+      "split": "train",
+      "response_quote": "Material: The pillow filling is made of 100% Polyester fiberfill, which is hypo-allergenic.",
+      "quote_start": 70,
+      "quote_end": 161
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cb764a2c6b67e4a4",
+      "trajectory_id": "shop_I_cb764a2c6b67e4a4",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_0212814077d02a70",
+      "trajectory_id": "shop_D_0212814077d02a70",
+      "split": "train",
+      "response_quote": "Infrared feature: The product includes an infrared sensor for motion detection.",
+      "quote_start": 70,
+      "quote_end": 149
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b63066a9f5103539",
+      "trajectory_id": "shop_I_b63066a9f5103539",
+      "split": "train",
+      "response_quote": "Size: 190x150x130mm/7.5*5.9*5.1inch",
+      "quote_start": 70,
+      "quote_end": 105
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1c482a57084ca375",
+      "trajectory_id": "shop_I_1c482a57084ca375",
+      "split": "train",
+      "response_quote": "Material: Ceramic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_622f413a7aeed3a1",
+      "trajectory_id": "shop_I_622f413a7aeed3a1",
+      "split": "train",
+      "response_quote": "Material: Cotton Fabric",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_72953b7b8cb80a7d",
+      "trajectory_id": "shop_I_72953b7b8cb80a7d",
+      "split": "train",
+      "response_quote": "Color: Red",
+      "quote_start": 70,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_1d3489c2bb4d75d7",
+      "trajectory_id": "shop_D_1d3489c2bb4d75d7",
+      "split": "train",
+      "response_quote": "Title: HONDA ADV150 V1/ ADV 160 V2 Full Alloy Front Windshield/Alloy Visor Made in Thailand",
+      "quote_start": 70,
+      "quote_end": 161
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2a8eba54e85713b6",
+      "trajectory_id": "shop_I_2a8eba54e85713b6",
+      "split": "train",
+      "response_quote": "Interface/Port: This night light features a **Type-C port** for recharging, as described in the product details.",
+      "quote_start": 70,
+      "quote_end": 182
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_76536feea567fc60",
+      "trajectory_id": "shop_I_76536feea567fc60",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a961710d40eaedfd",
+      "trajectory_id": "shop_I_a961710d40eaedfd",
+      "split": "train",
+      "response_quote": "Material: Rubber",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8e08462f40c40c54",
+      "trajectory_id": "shop_I_8e08462f40c40c54",
+      "split": "train",
+      "response_quote": "Size: s",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b02a6a0eaf80c091",
+      "trajectory_id": "shop_I_b02a6a0eaf80c091",
+      "split": "train",
+      "response_quote": "Size: Large",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a531d967c8814ec4",
+      "trajectory_id": "shop_I_a531d967c8814ec4",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ae14ac72ee7c029f",
+      "trajectory_id": "shop_I_ae14ac72ee7c029f",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a60ff57f64d939fb",
+      "trajectory_id": "shop_I_a60ff57f64d939fb",
+      "split": "train",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_c2d38a439b229041",
+      "trajectory_id": "shop_D_c2d38a439b229041",
+      "split": "train",
+      "response_quote": "Power: 999999Pa suction power",
+      "quote_start": 70,
+      "quote_end": 99
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9887b85c4a3c29d1",
+      "trajectory_id": "shop_I_9887b85c4a3c29d1",
+      "split": "train",
+      "response_quote": "Size: Large (500ml)",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b2d29f48e134148f",
+      "trajectory_id": "shop_I_b2d29f48e134148f",
+      "split": "train",
+      "response_quote": "Interface/Port: 3.5mm plug",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_21fd93d87ded5082",
+      "trajectory_id": "shop_I_21fd93d87ded5082",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_12ebaf076106f984",
+      "trajectory_id": "shop_I_12ebaf076106f984",
+      "split": "train",
+      "response_quote": "Interface/Port: USB Type-C",
+      "quote_start": 69,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_f6fe938725abe3b7",
+      "trajectory_id": "shop_D_f6fe938725abe3b7",
+      "split": "train",
+      "response_quote": "Material: 304 Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 99
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a6177c471094876d",
+      "trajectory_id": "shop_I_a6177c471094876d",
+      "split": "train",
+      "response_quote": "Interface/Port: USB-C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9971e7dd182c14fb",
+      "trajectory_id": "shop_I_9971e7dd182c14fb",
+      "split": "train",
+      "response_quote": "Official service/badge: The product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 149
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3501f47812ea9fdf",
+      "trajectory_id": "shop_I_3501f47812ea9fdf",
+      "split": "train",
+      "response_quote": "Material: Cotton",
+      "quote_start": 69,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_81bcbadd132a009f",
+      "trajectory_id": "shop_I_81bcbadd132a009f",
+      "split": "train",
+      "response_quote": "Color: Orange lenses",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_93b06f316872f1e7",
+      "trajectory_id": "shop_I_93b06f316872f1e7",
+      "split": "train",
+      "response_quote": "Interface/Port: USB Type-C",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_71a8c47da70aa976",
+      "trajectory_id": "shop_I_71a8c47da70aa976",
+      "split": "train",
+      "response_quote": "Size: M-2XL",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_bbed379a39b8b111",
+      "trajectory_id": "shop_I_bbed379a39b8b111",
+      "split": "train",
+      "response_quote": "Interface/Port: Micro-USB",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2dfcb62640bf9b67",
+      "trajectory_id": "shop_I_2dfcb62640bf9b67",
+      "split": "train",
+      "response_quote": "Type-C interface/port: The product is described as a \"Rotary Double Ring Electric Shaver Razor Waterproof Type-C Rechargeable Travel Portable Mens Magnetic Electric Razor Beard Trimmer Remover Tool,\" which confirms the presence of a Type-C interface/port.",
+      "quote_start": 70,
+      "quote_end": 325
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f7ef38acc42e3ebe",
+      "trajectory_id": "shop_I_f7ef38acc42e3ebe",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 136
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c172b41461ce2f4c",
+      "trajectory_id": "shop_I_c172b41461ce2f4c",
+      "split": "train",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_32f3e99bfd3bbafe",
+      "trajectory_id": "shop_I_32f3e99bfd3bbafe",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0486a8bd75af337f",
+      "trajectory_id": "shop_I_0486a8bd75af337f",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_551a88217e3335fc",
+      "trajectory_id": "shop_I_551a88217e3335fc",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0caf38e1c674bac3",
+      "trajectory_id": "shop_I_0caf38e1c674bac3",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6bd8451e7d1127f0",
+      "trajectory_id": "shop_I_6bd8451e7d1127f0",
+      "split": "train",
+      "response_quote": "Material: Cotton",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_f9058938e8f53b05",
+      "trajectory_id": "shop_D_f9058938e8f53b05",
+      "split": "train",
+      "response_quote": "Title: [2025 New Upgrade]LED ceiling light 3 colors ceiling lamp modern living room ceiling lamp dining bedroom indoor lamp center light kitchen chandelier dimmable panel lamp nordic corridor light energy saving with remote control/switch",
+      "quote_start": 70,
+      "quote_end": 308
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_410ffaf0f86492a7",
+      "trajectory_id": "shop_I_410ffaf0f86492a7",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_da4d4608c44c696b",
+      "trajectory_id": "shop_I_da4d4608c44c696b",
+      "split": "train",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_1f5213c679a6f6f8",
+      "trajectory_id": "shop_D_1f5213c679a6f6f8",
+      "split": "train",
+      "response_quote": "Compatibility: Universally fit all the motorcycle with 12V battery.",
+      "quote_start": 70,
+      "quote_end": 137
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e868eb29c9ce9f14",
+      "trajectory_id": "shop_I_e868eb29c9ce9f14",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge, ensuring authenticity and quality.",
+      "quote_start": 70,
+      "quote_end": 185
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7fbd1779ea068450",
+      "trajectory_id": "shop_I_7fbd1779ea068450",
+      "split": "train",
+      "response_quote": "Size: XXXL (110*72*95cm)",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_538eb0e9c2aa7f63",
+      "trajectory_id": "shop_I_538eb0e9c2aa7f63",
+      "split": "train",
+      "response_quote": "Interface/Port: USB-C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_449f90e94e3853a5",
+      "trajectory_id": "shop_I_449f90e94e3853a5",
+      "split": "train",
+      "response_quote": "Type C interface: The product includes a Type-C charging port, fulfilling the hard requirement.",
+      "quote_start": 70,
+      "quote_end": 165
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_818b7f76e86725ac",
+      "trajectory_id": "shop_I_818b7f76e86725ac",
+      "split": "train",
+      "response_quote": "Size: XXXL",
+      "quote_start": 69,
+      "quote_end": 79
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_dc6c9329fa0dbbe3",
+      "trajectory_id": "shop_I_dc6c9329fa0dbbe3",
+      "split": "train",
+      "response_quote": "Material: Rubber (Outsole Material: Rubber)",
+      "quote_start": 70,
+      "quote_end": 113
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0ff289feb373a879",
+      "trajectory_id": "shop_I_0ff289feb373a879",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6fc06040609c5352",
+      "trajectory_id": "shop_I_6fc06040609c5352",
+      "split": "train",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_05a53ae99d1f2280",
+      "trajectory_id": "shop_I_05a53ae99d1f2280",
+      "split": "train",
+      "response_quote": "Lazmall service/badge: The product has Lazmall's guarantee, which includes a 15-day Lazmall return policy and other services.",
+      "quote_start": 70,
+      "quote_end": 195
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3025af8a7505bb86",
+      "trajectory_id": "shop_I_3025af8a7505bb86",
+      "split": "train",
+      "response_quote": "Size: L",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7f549607dd4b26c6",
+      "trajectory_id": "shop_I_7f549607dd4b26c6",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 69,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_65cdfb93df32481a",
+      "trajectory_id": "shop_I_65cdfb93df32481a",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_3ea98f27c8cb70cf",
+      "trajectory_id": "shop_D_3ea98f27c8cb70cf",
+      "split": "train",
+      "response_quote": "Brand: Amerilock",
+      "quote_start": 69,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4dad2adf34251b2e",
+      "trajectory_id": "shop_I_4dad2adf34251b2e",
+      "split": "train",
+      "response_quote": "Size: S (as per the user's hard requirement)",
+      "quote_start": 70,
+      "quote_end": 114
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6255eb52247b9d2b",
+      "trajectory_id": "shop_I_6255eb52247b9d2b",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c29207350485e1d9",
+      "trajectory_id": "shop_I_c29207350485e1d9",
+      "split": "train",
+      "response_quote": "Size: 10 inch",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7b13583ecaf40ea6",
+      "trajectory_id": "shop_I_7b13583ecaf40ea6",
+      "split": "train",
+      "response_quote": "Color: Silver",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_34331ac4b82f0da9",
+      "trajectory_id": "shop_I_34331ac4b82f0da9",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 137
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2e64fc175fb4bc51",
+      "trajectory_id": "shop_I_2e64fc175fb4bc51",
+      "split": "train",
+      "response_quote": "Material: Stainless steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a2f036e6e565ff01",
+      "trajectory_id": "shop_I_a2f036e6e565ff01",
+      "split": "train",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_789a705dbe1eec8b",
+      "trajectory_id": "shop_I_789a705dbe1eec8b",
+      "split": "train",
+      "response_quote": "Size: Large (5L capacity)",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_0b99003bca8a5db4",
+      "trajectory_id": "shop_D_0b99003bca8a5db4",
+      "split": "train",
+      "response_quote": "Price: 91.5 PHP",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9f987fc28bb63d93",
+      "trajectory_id": "shop_I_9f987fc28bb63d93",
+      "split": "train",
+      "response_quote": "Color: Green",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_422080d5ff13f303",
+      "trajectory_id": "shop_I_422080d5ff13f303",
+      "split": "train",
+      "response_quote": "Color: Blue",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7307b6d97d3446ee",
+      "trajectory_id": "shop_I_7307b6d97d3446ee",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a585acf17a3ac2df",
+      "trajectory_id": "shop_I_a585acf17a3ac2df",
+      "split": "train",
+      "response_quote": "Color: Red",
+      "quote_start": 70,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0c34835a2e984300",
+      "trajectory_id": "shop_I_0c34835a2e984300",
+      "split": "train",
+      "response_quote": "Size: 2.8 inch TFT color screen",
+      "quote_start": 70,
+      "quote_end": 101
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8fcdf04e2d1392fa",
+      "trajectory_id": "shop_I_8fcdf04e2d1392fa",
+      "split": "train",
+      "response_quote": "Material: Linen",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_07009b847d539aff",
+      "trajectory_id": "shop_I_07009b847d539aff",
+      "split": "train",
+      "response_quote": "Material: Wood",
+      "quote_start": 69,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b47c91613a2c0d32",
+      "trajectory_id": "shop_I_b47c91613a2c0d32",
+      "split": "train",
+      "response_quote": "Size: 10 inch",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_72ad9c9967792bb7",
+      "trajectory_id": "shop_D_72ad9c9967792bb7",
+      "split": "train",
+      "response_quote": "Title: Cartoon case For Samsung With Diagonal Strap Lanyard shockproof case Back Cover Mobile Phone Case Drilling shell For Samsung Galaxy S24 Ultra S23 Plus S22 Plus S25 Ultra S20 Plus S21 Plus S24U Note10 Plus Note20 Ultra Casing With Rope",
+      "quote_start": 70,
+      "quote_end": 311
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e7ff847fffd6114d",
+      "trajectory_id": "shop_I_e7ff847fffd6114d",
+      "split": "train",
+      "response_quote": "Material: nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e09960ef48b479f6",
+      "trajectory_id": "shop_I_e09960ef48b479f6",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0bab10595cd196a9",
+      "trajectory_id": "shop_I_0bab10595cd196a9",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cef693935d13b18f",
+      "trajectory_id": "shop_I_cef693935d13b18f",
+      "split": "train",
+      "response_quote": "Color: Red-lining",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_938a48c0b6704cea",
+      "trajectory_id": "shop_I_938a48c0b6704cea",
+      "split": "train",
+      "response_quote": "Size: 20ml (large size)",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_276a6180461c6191",
+      "trajectory_id": "shop_I_276a6180461c6191",
+      "split": "train",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_39499b8eef95ea14",
+      "trajectory_id": "shop_D_39499b8eef95ea14",
+      "split": "train",
+      "response_quote": "Price: 319.0 PHP",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e96f6b20d781b241",
+      "trajectory_id": "shop_I_e96f6b20d781b241",
+      "split": "train",
+      "response_quote": "Material: Hard Aluminum",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c184e8e11d0ac395",
+      "trajectory_id": "shop_I_c184e8e11d0ac395",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_086122855fed6012",
+      "trajectory_id": "shop_I_086122855fed6012",
+      "split": "train",
+      "response_quote": "Material: The product is made with basswood for both the panel and the dorsal side panel.",
+      "quote_start": 69,
+      "quote_end": 158
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f024793955777917",
+      "trajectory_id": "shop_I_f024793955777917",
+      "split": "train",
+      "response_quote": "Service: Official service/badge",
+      "quote_start": 70,
+      "quote_end": 101
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_fc8fb55595d67b28",
+      "trajectory_id": "shop_I_fc8fb55595d67b28",
+      "split": "train",
+      "response_quote": "Service: Official",
+      "quote_start": 1312,
+      "quote_end": 1329
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_83b23d1a0c87adbd",
+      "trajectory_id": "shop_I_83b23d1a0c87adbd",
+      "split": "train",
+      "response_quote": "Size: 25x60CM;35X100CM;40x120CM;50x160CM;60X180CM",
+      "quote_start": 70,
+      "quote_end": 119
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_041ccbd0a0a7805e",
+      "trajectory_id": "shop_I_041ccbd0a0a7805e",
+      "split": "train",
+      "response_quote": "Material: Leather",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_65def16ab08c1755",
+      "trajectory_id": "shop_I_65def16ab08c1755",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_50d9c9f55e69cbb0",
+      "trajectory_id": "shop_I_50d9c9f55e69cbb0",
+      "split": "train",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3e8637c1b2c0958b",
+      "trajectory_id": "shop_I_3e8637c1b2c0958b",
+      "split": "train",
+      "response_quote": "Interface/Port: USB C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4106e5a717fbd4a7",
+      "trajectory_id": "shop_I_4106e5a717fbd4a7",
+      "split": "train",
+      "response_quote": "Interface/Port: USB charging port",
+      "quote_start": 70,
+      "quote_end": 103
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c819245a52a71f12",
+      "trajectory_id": "shop_I_c819245a52a71f12",
+      "split": "train",
+      "response_quote": "3.5mm Headphone Port: YES",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_fb156f035c8b598c",
+      "trajectory_id": "shop_D_fb156f035c8b598c",
+      "split": "train",
+      "response_quote": "Title: color randomly;universal;high quality;fast shipping;",
+      "quote_start": 70,
+      "quote_end": 129
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_07cf4b67886f7e3b",
+      "trajectory_id": "shop_I_07cf4b67886f7e3b",
+      "split": "train",
+      "response_quote": "Color: Silver",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1731de51659fc475",
+      "trajectory_id": "shop_I_1731de51659fc475",
+      "split": "train",
+      "response_quote": "Size: S-52",
+      "quote_start": 70,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_902ce066049674df",
+      "trajectory_id": "shop_I_902ce066049674df",
+      "split": "train",
+      "response_quote": "Material: Plastic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_db5f6d0b4b7040a9",
+      "trajectory_id": "shop_I_db5f6d0b4b7040a9",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 137
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_535ac5b96b1641b7",
+      "trajectory_id": "shop_I_535ac5b96b1641b7",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 69,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2a0fc51c22bf5c82",
+      "trajectory_id": "shop_I_2a0fc51c22bf5c82",
+      "split": "train",
+      "response_quote": "Free shipping service: Available",
+      "quote_start": 70,
+      "quote_end": 102
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_146f5547535d6659",
+      "trajectory_id": "shop_I_146f5547535d6659",
+      "split": "train",
+      "response_quote": "Color: Orange",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_010110e021ef3b56",
+      "trajectory_id": "shop_I_010110e021ef3b56",
+      "split": "train",
+      "response_quote": "Size: 4TB",
+      "quote_start": 69,
+      "quote_end": 78
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e71d79a629a20ae3",
+      "trajectory_id": "shop_I_e71d79a629a20ae3",
+      "split": "train",
+      "response_quote": "Formulation: Fragrance-free",
+      "quote_start": 70,
+      "quote_end": 97
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_66dcd60992582a65",
+      "trajectory_id": "shop_I_66dcd60992582a65",
+      "split": "train",
+      "response_quote": "Color: Blue",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4bc9859cb5fb3528",
+      "trajectory_id": "shop_I_4bc9859cb5fb3528",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 188,
+      "quote_end": 214
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2cb89a31e0e023f8",
+      "trajectory_id": "shop_I_2cb89a31e0e023f8",
+      "split": "train",
+      "response_quote": "Color/Colour: Red",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8844688068533e53",
+      "trajectory_id": "shop_I_8844688068533e53",
+      "split": "train",
+      "response_quote": "Formulation: Paraben-Free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_fe56e299feedb551",
+      "trajectory_id": "shop_D_fe56e299feedb551",
+      "split": "train",
+      "response_quote": "Price: Above 26 PHP",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e33bbae425a71f8e",
+      "trajectory_id": "shop_I_e33bbae425a71f8e",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_02c0f871edf522d7",
+      "trajectory_id": "shop_I_02c0f871edf522d7",
+      "split": "train",
+      "response_quote": "Material: silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_879a57ce771dbf26",
+      "trajectory_id": "shop_I_879a57ce771dbf26",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4e3055416d44efaa",
+      "trajectory_id": "shop_I_4e3055416d44efaa",
+      "split": "train",
+      "response_quote": "Material: The product is made of good quality metal and plastic material, fulfilling the hard requirement for plastic material.",
+      "quote_start": 70,
+      "quote_end": 197
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0f6f21393f680d09",
+      "trajectory_id": "shop_I_0f6f21393f680d09",
+      "split": "train",
+      "response_quote": "Material: 304 Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 99
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_71a9b9e54966210c",
+      "trajectory_id": "shop_I_71a9b9e54966210c",
+      "split": "train",
+      "response_quote": "Color: pink",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a6bd7e358a90b01d",
+      "trajectory_id": "shop_I_a6bd7e358a90b01d",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 69,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_dd3d3bb31f85e15f",
+      "trajectory_id": "shop_I_dd3d3bb31f85e15f",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a1007eccc22b9f44",
+      "trajectory_id": "shop_I_a1007eccc22b9f44",
+      "split": "train",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4084e1fb4c8dc344",
+      "trajectory_id": "shop_I_4084e1fb4c8dc344",
+      "split": "train",
+      "response_quote": "Type C interface/port: The product has a Type-C port for charging.",
+      "quote_start": 70,
+      "quote_end": 136
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3fccd6b5c2ec9298",
+      "trajectory_id": "shop_I_3fccd6b5c2ec9298",
+      "split": "train",
+      "response_quote": "Interface: Type-C to HDMI",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_da4afe75e16d8886",
+      "trajectory_id": "shop_I_da4afe75e16d8886",
+      "split": "train",
+      "response_quote": "Color: Beige",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_380ca1c3e4db72e4",
+      "trajectory_id": "shop_I_380ca1c3e4db72e4",
+      "split": "train",
+      "response_quote": "Size: S",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d37f2c9e386686a9",
+      "trajectory_id": "shop_I_d37f2c9e386686a9",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_bacbcf14f46ab05b",
+      "trajectory_id": "shop_I_bacbcf14f46ab05b",
+      "split": "train",
+      "response_quote": "Color: Navy Blue",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c38039e1d65d176b",
+      "trajectory_id": "shop_I_c38039e1d65d176b",
+      "split": "train",
+      "response_quote": "Type C interface: Yes",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ab102a941e761907",
+      "trajectory_id": "shop_I_ab102a941e761907",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_92803fadff595a3f",
+      "trajectory_id": "shop_I_92803fadff595a3f",
+      "split": "train",
+      "response_quote": "Size: Medium (3mm)",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1605bb0c9dbb528d",
+      "trajectory_id": "shop_I_1605bb0c9dbb528d",
+      "split": "train",
+      "response_quote": "Material: Pure cotton",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_88c53c6bb0b28919",
+      "trajectory_id": "shop_I_88c53c6bb0b28919",
+      "split": "train",
+      "response_quote": "Type C interface: The product supports a Type-C interface, which is a hard requirement specified by the user.",
+      "quote_start": 70,
+      "quote_end": 179
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_233af53cfcf4f4f9",
+      "trajectory_id": "shop_I_233af53cfcf4f4f9",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_daf34fbf374e68d3",
+      "trajectory_id": "shop_I_daf34fbf374e68d3",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_38c192187829d2c9",
+      "trajectory_id": "shop_I_38c192187829d2c9",
+      "split": "train",
+      "response_quote": "Interface/Port: USB-C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a5bc1533cfb71eae",
+      "trajectory_id": "shop_I_a5bc1533cfb71eae",
+      "split": "train",
+      "response_quote": "Official service/badge: The product is described as \"Authentic and high quality,\" indicating it has an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 196
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_04d548bd4c60ff93",
+      "trajectory_id": "shop_I_04d548bd4c60ff93",
+      "split": "train",
+      "response_quote": "Size: Large",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_75030d7a04c4966f",
+      "trajectory_id": "shop_I_75030d7a04c4966f",
+      "split": "train",
+      "response_quote": "Material: Aluminum",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_177b7f84da00dc50",
+      "trajectory_id": "shop_I_177b7f84da00dc50",
+      "split": "train",
+      "response_quote": "Official service/badge: The selected product has the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 146
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c1c5961c321c2f3f",
+      "trajectory_id": "shop_I_c1c5961c321c2f3f",
+      "split": "train",
+      "response_quote": "Material: Nylon Fiber Brush Head",
+      "quote_start": 70,
+      "quote_end": 102
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_343addda03de1678",
+      "trajectory_id": "shop_I_343addda03de1678",
+      "split": "train",
+      "response_quote": "Color: White (Mixed with other colors)",
+      "quote_start": 70,
+      "quote_end": 108
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5909b5757aa77192",
+      "trajectory_id": "shop_I_5909b5757aa77192",
+      "split": "train",
+      "response_quote": "Material: PU Leather",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_16ad2581e50d0f3c",
+      "trajectory_id": "shop_I_16ad2581e50d0f3c",
+      "split": "train",
+      "response_quote": "Material: Short Plush",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d31f1a326ea9bd3e",
+      "trajectory_id": "shop_I_d31f1a326ea9bd3e",
+      "split": "train",
+      "response_quote": "Material: Steel",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_440f112ea7211ab6",
+      "trajectory_id": "shop_I_440f112ea7211ab6",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 136
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8e31ea4563513584",
+      "trajectory_id": "shop_I_8e31ea4563513584",
+      "split": "train",
+      "response_quote": "Material: Steel",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_bacce5117d2e33dc",
+      "trajectory_id": "shop_I_bacce5117d2e33dc",
+      "split": "train",
+      "response_quote": "Size: M",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9344c1a979b9125b",
+      "trajectory_id": "shop_I_9344c1a979b9125b",
+      "split": "train",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_13251cf5584de25d",
+      "trajectory_id": "shop_I_13251cf5584de25d",
+      "split": "train",
+      "response_quote": "Color: Navy Blue",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_412eb02ec6985d31",
+      "trajectory_id": "shop_I_412eb02ec6985d31",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 136
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0fd7aa9a133a4606",
+      "trajectory_id": "shop_I_0fd7aa9a133a4606",
+      "split": "train",
+      "response_quote": "Material: Cotton",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1e2d584d09946d15",
+      "trajectory_id": "shop_I_1e2d584d09946d15",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e3171739751fbe95",
+      "trajectory_id": "shop_I_e3171739751fbe95",
+      "split": "train",
+      "response_quote": "Interface/Port: 3.5mm",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_87947921c5e9fa45",
+      "trajectory_id": "shop_I_87947921c5e9fa45",
+      "split": "train",
+      "response_quote": "Size: 6 inch",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8ca46d39d1ada24c",
+      "trajectory_id": "shop_I_8ca46d39d1ada24c",
+      "split": "train",
+      "response_quote": "Color: Gold",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e7069c90e3d18e3e",
+      "trajectory_id": "shop_I_e7069c90e3d18e3e",
+      "split": "train",
+      "response_quote": "Size: L",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_926e838ae727b729",
+      "trajectory_id": "shop_I_926e838ae727b729",
+      "split": "train",
+      "response_quote": "Material: Rubber",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1ff8790ec2187463",
+      "trajectory_id": "shop_I_1ff8790ec2187463",
+      "split": "train",
+      "response_quote": "Material: Plastic",
+      "quote_start": 69,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_439b1415ea42c335",
+      "trajectory_id": "shop_I_439b1415ea42c335",
+      "split": "train",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_be21761621d36a68",
+      "trajectory_id": "shop_I_be21761621d36a68",
+      "split": "train",
+      "response_quote": "Material: Copper",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_ad24d00e7bd39902",
+      "trajectory_id": "shop_D_ad24d00e7bd39902",
+      "split": "train",
+      "response_quote": "Price: 15.0 pesos",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7ec74fc471419273",
+      "trajectory_id": "shop_I_7ec74fc471419273",
+      "split": "train",
+      "response_quote": "Compatible with UK plug: The product is compatible with UK plug as it is specified that the backend will automatically replace the plug for Malaysia and Singapore with a UK Plug.",
+      "quote_start": 70,
+      "quote_end": 248
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f8285b7a41c28b8e",
+      "trajectory_id": "shop_I_f8285b7a41c28b8e",
+      "split": "train",
+      "response_quote": "Material: Nylon bristles",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9a8c884306e6d25a",
+      "trajectory_id": "shop_I_9a8c884306e6d25a",
+      "split": "train",
+      "response_quote": "Material: PVC (plastic)",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5cfe55470c7dba13",
+      "trajectory_id": "shop_I_5cfe55470c7dba13",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge, ensuring authenticity and quality.",
+      "quote_start": 70,
+      "quote_end": 185
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_a934d80eb6ef099a",
+      "trajectory_id": "shop_D_a934d80eb6ef099a",
+      "split": "train",
+      "response_quote": "Title: Moose Gear White Combi Muscle Shirt With Sahara Sun Short Set (MSS- 14748 CW)",
+      "quote_start": 70,
+      "quote_end": 154
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_af4444e2a5082774",
+      "trajectory_id": "shop_I_af4444e2a5082774",
+      "split": "train",
+      "response_quote": "Color: Gold",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b99a52bbe8edbfc2",
+      "trajectory_id": "shop_I_b99a52bbe8edbfc2",
+      "split": "train",
+      "response_quote": "Material: Linen",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_76561021c10b3b7d",
+      "trajectory_id": "shop_I_76561021c10b3b7d",
+      "split": "train",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d4f019d11215d82d",
+      "trajectory_id": "shop_I_d4f019d11215d82d",
+      "split": "train",
+      "response_quote": "Material: Stainless 304",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_30dc3f2aa44f3b76",
+      "trajectory_id": "shop_I_30dc3f2aa44f3b76",
+      "split": "train",
+      "response_quote": "Material: polyester",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b0af82039e132502",
+      "trajectory_id": "shop_I_b0af82039e132502",
+      "split": "train",
+      "response_quote": "Material: nylon string",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_512e84264fdceae2",
+      "trajectory_id": "shop_I_512e84264fdceae2",
+      "split": "train",
+      "response_quote": "Material: Composite Material",
+      "quote_start": 70,
+      "quote_end": 98
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3cafdabd6ebf793e",
+      "trajectory_id": "shop_I_3cafdabd6ebf793e",
+      "split": "train",
+      "response_quote": "3.5mm interface/port: The product has a 3.5mm Male Jack.",
+      "quote_start": 70,
+      "quote_end": 126
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_93fe925612cec11d",
+      "trajectory_id": "shop_I_93fe925612cec11d",
+      "split": "train",
+      "response_quote": "Size: Medium",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_94be5ee7182e690b",
+      "trajectory_id": "shop_I_94be5ee7182e690b",
+      "split": "train",
+      "response_quote": "Color: Yellow",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_21c944a2eb38a6eb",
+      "trajectory_id": "shop_I_21c944a2eb38a6eb",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b029a21189113fa3",
+      "trajectory_id": "shop_I_b029a21189113fa3",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_364be7d2ad74279f",
+      "trajectory_id": "shop_I_364be7d2ad74279f",
+      "split": "train",
+      "response_quote": "3.5mm interface: Yes",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_30d95398949e4446",
+      "trajectory_id": "shop_I_30d95398949e4446",
+      "split": "train",
+      "response_quote": "Color: Green",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2b69595997e8cb45",
+      "trajectory_id": "shop_I_2b69595997e8cb45",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is supported by cash on delivery (COD) and is ready for shipment, indicating it meets the requirement for an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 239
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a9f595058220f7b1",
+      "trajectory_id": "shop_I_a9f595058220f7b1",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ed66e1fb6534d1cb",
+      "trajectory_id": "shop_I_ed66e1fb6534d1cb",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0a02187bb43e812a",
+      "trajectory_id": "shop_I_0a02187bb43e812a",
+      "split": "train",
+      "response_quote": "Color: purple",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_7b763eb1b8015460",
+      "trajectory_id": "shop_D_7b763eb1b8015460",
+      "split": "train",
+      "response_quote": "Color: Brown",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_31acd45ae9cb7537",
+      "trajectory_id": "shop_I_31acd45ae9cb7537",
+      "split": "train",
+      "response_quote": "Material: Steel",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a61351b220e39050",
+      "trajectory_id": "shop_I_a61351b220e39050",
+      "split": "train",
+      "response_quote": "Color: The product features a color combination of Racer Blue/Summit White-Black.",
+      "quote_start": 70,
+      "quote_end": 151
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_65e30fd0cd9b8f34",
+      "trajectory_id": "shop_I_65e30fd0cd9b8f34",
+      "split": "train",
+      "response_quote": "Interface/Port: USB Type-C 2.0",
+      "quote_start": 70,
+      "quote_end": 100
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_37ade7c1697387d9",
+      "trajectory_id": "shop_I_37ade7c1697387d9",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_b6d16f980a123458",
+      "trajectory_id": "shop_D_b6d16f980a123458",
+      "split": "train",
+      "response_quote": "Size: about 9.6*0.3*0.3cm",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_69b679c10d752f95",
+      "trajectory_id": "shop_D_69b679c10d752f95",
+      "split": "train",
+      "response_quote": "Service: LazMall (guaranteed authenticity, 15-day unconditional returns, 7-day delivery)",
+      "quote_start": 70,
+      "quote_end": 158
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_bf32584356687542",
+      "trajectory_id": "shop_I_bf32584356687542",
+      "split": "train",
+      "response_quote": "Formulation: Alcohol-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1b5b3a07eba7d443",
+      "trajectory_id": "shop_I_1b5b3a07eba7d443",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7442dd42efc50e67",
+      "trajectory_id": "shop_I_7442dd42efc50e67",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f4f9802f921604c3",
+      "trajectory_id": "shop_I_f4f9802f921604c3",
+      "split": "train",
+      "response_quote": "Material: Soft Cotton",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_14cd271a9c9530ee",
+      "trajectory_id": "shop_I_14cd271a9c9530ee",
+      "split": "train",
+      "response_quote": "Size: 13cm (approx.)",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7ae5979a2072cb4b",
+      "trajectory_id": "shop_I_7ae5979a2072cb4b",
+      "split": "train",
+      "response_quote": "Color: brown",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ae2a0335ef7db9e8",
+      "trajectory_id": "shop_I_ae2a0335ef7db9e8",
+      "split": "train",
+      "response_quote": "Material: Anodized aluminium alloy",
+      "quote_start": 70,
+      "quote_end": 104
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_c68704d70d917b9c",
+      "trajectory_id": "shop_D_c68704d70d917b9c",
+      "split": "train",
+      "response_quote": "Price: 64.0 PHP",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_222fb0c88ebdc52e",
+      "trajectory_id": "shop_I_222fb0c88ebdc52e",
+      "split": "train",
+      "response_quote": "Size: Small (15 * 5 * 5 Cm)",
+      "quote_start": 70,
+      "quote_end": 97
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5d670433caf1dc04",
+      "trajectory_id": "shop_I_5d670433caf1dc04",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_056ed90b17fd6414",
+      "trajectory_id": "shop_I_056ed90b17fd6414",
+      "split": "train",
+      "response_quote": "Material: Plastic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7e20559dccaec5a8",
+      "trajectory_id": "shop_I_7e20559dccaec5a8",
+      "split": "train",
+      "response_quote": "Color: Green",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_76ad72552fd282c3",
+      "trajectory_id": "shop_I_76ad72552fd282c3",
+      "split": "train",
+      "response_quote": "Size: 2.5kg",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_911dc7f94675192d",
+      "trajectory_id": "shop_I_911dc7f94675192d",
+      "split": "train",
+      "response_quote": "Formulation: Alcohol-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f3ad18755179ce71",
+      "trajectory_id": "shop_I_f3ad18755179ce71",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e08c6fb6704195b8",
+      "trajectory_id": "shop_I_e08c6fb6704195b8",
+      "split": "train",
+      "response_quote": "Size: Large (1.25L capacity, suitable for 10 cups)",
+      "quote_start": 70,
+      "quote_end": 120
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3a898e5bba6ab0e5",
+      "trajectory_id": "shop_I_3a898e5bba6ab0e5",
+      "split": "train",
+      "response_quote": "Material: Neoprene",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_85b73a049ebe94d1",
+      "trajectory_id": "shop_I_85b73a049ebe94d1",
+      "split": "train",
+      "response_quote": "Size: 6.5 inch",
+      "quote_start": 70,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_011eac2d29677370",
+      "trajectory_id": "shop_I_011eac2d29677370",
+      "split": "train",
+      "response_quote": "Material: 100% Polyester",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a2562d67a0edcc5f",
+      "trajectory_id": "shop_I_a2562d67a0edcc5f",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a2ae3e4f4098d6b2",
+      "trajectory_id": "shop_I_a2ae3e4f4098d6b2",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 137
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0af2143b95c007ae",
+      "trajectory_id": "shop_I_0af2143b95c007ae",
+      "split": "train",
+      "response_quote": "Interface/Port: USB-C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5b7ca2feae50a216",
+      "trajectory_id": "shop_I_5b7ca2feae50a216",
+      "split": "train",
+      "response_quote": "Color: Orange",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_be7a56eee57a1ee9",
+      "trajectory_id": "shop_I_be7a56eee57a1ee9",
+      "split": "train",
+      "response_quote": "Official service/badge: The product has an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 136
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_16e81dfc23eb6974",
+      "trajectory_id": "shop_I_16e81dfc23eb6974",
+      "split": "train",
+      "response_quote": "Material: Linen",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_65cf1fc89e49f4a9",
+      "trajectory_id": "shop_I_65cf1fc89e49f4a9",
+      "split": "train",
+      "response_quote": "Service: official",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_00d5ab610aa32db8",
+      "trajectory_id": "shop_I_00d5ab610aa32db8",
+      "split": "train",
+      "response_quote": "Size: 110*90*15mm",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ae85b9c73672a917",
+      "trajectory_id": "shop_I_ae85b9c73672a917",
+      "split": "train",
+      "response_quote": "Material: Genuine Leather",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b7ea4ae0f88b2fdc",
+      "trajectory_id": "shop_I_b7ea4ae0f88b2fdc",
+      "split": "train",
+      "response_quote": "Material: Glass",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ce12f09e72a4bbfb",
+      "trajectory_id": "shop_I_ce12f09e72a4bbfb",
+      "split": "train",
+      "response_quote": "Material: Plastic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_35bf1ea68e605dfd",
+      "trajectory_id": "shop_I_35bf1ea68e605dfd",
+      "split": "train",
+      "response_quote": "Size: XL",
+      "quote_start": 70,
+      "quote_end": 78
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_da41bc3ca21c1fb6",
+      "trajectory_id": "shop_I_da41bc3ca21c1fb6",
+      "split": "train",
+      "response_quote": "Type C interface/port: The FONKEN 4 IN 1 USB/Type-C HUB is designed with a Type-C interface, making it compatible with devices that use this port.",
+      "quote_start": 70,
+      "quote_end": 216
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_025e21d5a3d40d01",
+      "trajectory_id": "shop_I_025e21d5a3d40d01",
+      "split": "train",
+      "response_quote": "Material: Galvanized Steel Plate",
+      "quote_start": 70,
+      "quote_end": 102
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1229d18babe66185",
+      "trajectory_id": "shop_I_1229d18babe66185",
+      "split": "train",
+      "response_quote": "Material: 100% Polyester",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_df7deae4b4006533",
+      "trajectory_id": "shop_D_df7deae4b4006533",
+      "split": "train",
+      "response_quote": "Title: \"PETZOOM Adventure and Its Full Life Dog Food 520g Dog Food Adult Puppy Universal Dog Food Teddy Bome Dog Food\"",
+      "quote_start": 70,
+      "quote_end": 188
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_21739a8f5bb50dd7",
+      "trajectory_id": "shop_I_21739a8f5bb50dd7",
+      "split": "train",
+      "response_quote": "Interface/Port: USB C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f0adaa4dae994e03",
+      "trajectory_id": "shop_I_f0adaa4dae994e03",
+      "split": "train",
+      "response_quote": "Size: 5cm in diameter",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_3bc3cfad63a11863",
+      "trajectory_id": "shop_D_3bc3cfad63a11863",
+      "split": "train",
+      "response_quote": "Price: 700 PHP",
+      "quote_start": 70,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cc6bfbe9a4fb8e64",
+      "trajectory_id": "shop_I_cc6bfbe9a4fb8e64",
+      "split": "train",
+      "response_quote": "USB-C interface: The USB-C port on the back lets you charge any device using the speaker's built-in battery.",
+      "quote_start": 70,
+      "quote_end": 178
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f0b1f5d07a440104",
+      "trajectory_id": "shop_I_f0b1f5d07a440104",
+      "split": "train",
+      "response_quote": "Material: The product includes metal spring straps, which meet the hard requirement for metal material.",
+      "quote_start": 70,
+      "quote_end": 173
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8027872cd8639485",
+      "trajectory_id": "shop_I_8027872cd8639485",
+      "split": "train",
+      "response_quote": "Color: Red",
+      "quote_start": 70,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_442a4da228351594",
+      "trajectory_id": "shop_D_442a4da228351594",
+      "split": "train",
+      "response_quote": "Title: China Imported Ji Xiang Ju Spicy Enoki 180g Ready To Eat Snack Salad Sauce Cooking Sauce RBLM130",
+      "quote_start": 70,
+      "quote_end": 173
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0f25b4a3cf59daec",
+      "trajectory_id": "shop_I_0f25b4a3cf59daec",
+      "split": "train",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_dac3cd6036117e15",
+      "trajectory_id": "shop_I_dac3cd6036117e15",
+      "split": "train",
+      "response_quote": "Material: 304 Food grade stainless steel",
+      "quote_start": 70,
+      "quote_end": 110
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_42edc32e609d09b6",
+      "trajectory_id": "shop_I_42edc32e609d09b6",
+      "split": "train",
+      "response_quote": "Size: Large (20.3 x 12.2 x 5.9cm)",
+      "quote_start": 70,
+      "quote_end": 103
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_50f568feb1be9c66",
+      "trajectory_id": "shop_I_50f568feb1be9c66",
+      "split": "train",
+      "response_quote": "Compatible with US plug: Yes",
+      "quote_start": 70,
+      "quote_end": 98
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_62f8b8cb5ddc5445",
+      "trajectory_id": "shop_I_62f8b8cb5ddc5445",
+      "split": "train",
+      "response_quote": "Size: XXL",
+      "quote_start": 70,
+      "quote_end": 79
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_daf98a34ff5656d9",
+      "trajectory_id": "shop_I_daf98a34ff5656d9",
+      "split": "train",
+      "response_quote": "Official service/badge: The product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 149
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0a54a730182c0950",
+      "trajectory_id": "shop_I_0a54a730182c0950",
+      "split": "train",
+      "response_quote": "Size: Small (7g/5g/3.5g)",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_15257d599de79c9e",
+      "trajectory_id": "shop_I_15257d599de79c9e",
+      "split": "train",
+      "response_quote": "Color: Cream",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_768170c4dcdecf2d",
+      "trajectory_id": "shop_I_768170c4dcdecf2d",
+      "split": "train",
+      "response_quote": "Formulation: Paraben-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b165da8543186456",
+      "trajectory_id": "shop_I_b165da8543186456",
+      "split": "train",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_a677162810137efd",
+      "trajectory_id": "shop_D_a677162810137efd",
+      "split": "train",
+      "response_quote": "**Material**: Constructed from premium thickened materials and durable aluminum alloy.",
+      "quote_start": 70,
+      "quote_end": 156
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_b3faf634ee15c777",
+      "trajectory_id": "shop_D_b3faf634ee15c777",
+      "split": "train",
+      "response_quote": "Title: Toyota Fortuner 2005 to 2011 Black Rear Trunk Lid LED Logo",
+      "quote_start": 70,
+      "quote_end": 135
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_59d8024f0172ac61",
+      "trajectory_id": "shop_I_59d8024f0172ac61",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge, ensuring authenticity and quality.",
+      "quote_start": 70,
+      "quote_end": 185
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_ed02671a136393c5",
+      "trajectory_id": "shop_D_ed02671a136393c5",
+      "split": "train",
+      "response_quote": "Applicable crowd/style design: This polarized sunglasses is suitable for men/women with different face shapes.",
+      "quote_start": 70,
+      "quote_end": 180
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_615e4253d49ee485",
+      "trajectory_id": "shop_I_615e4253d49ee485",
+      "split": "train",
+      "response_quote": "Material: Plastic (PP material)",
+      "quote_start": 70,
+      "quote_end": 101
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a1ef6216c3cc6e9c",
+      "trajectory_id": "shop_I_a1ef6216c3cc6e9c",
+      "split": "train",
+      "response_quote": "Compatible with EU plug: Yes",
+      "quote_start": 70,
+      "quote_end": 98
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_60d142a9162b5e85",
+      "trajectory_id": "shop_I_60d142a9162b5e85",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c518b1bb0fa68fed",
+      "trajectory_id": "shop_I_c518b1bb0fa68fed",
+      "split": "train",
+      "response_quote": "Material: Plastic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1795c0d40635bb61",
+      "trajectory_id": "shop_I_1795c0d40635bb61",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4b84a22698615f66",
+      "trajectory_id": "shop_I_4b84a22698615f66",
+      "split": "train",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a5b7615bc40654b4",
+      "trajectory_id": "shop_I_a5b7615bc40654b4",
+      "split": "train",
+      "response_quote": "Interface/Port: 3.5mm",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_716a88ec6c1d235d",
+      "trajectory_id": "shop_I_716a88ec6c1d235d",
+      "split": "train",
+      "response_quote": "Size: 14 inch",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1535867a179b3f25",
+      "trajectory_id": "shop_I_1535867a179b3f25",
+      "split": "train",
+      "response_quote": "Size: 8.66 inch diameter and 0.39 inch thickness",
+      "quote_start": 70,
+      "quote_end": 118
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2c1682ed81645b0d",
+      "trajectory_id": "shop_I_2c1682ed81645b0d",
+      "split": "train",
+      "response_quote": "Interface/Port: Type C",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0dc91ae1550643ea",
+      "trajectory_id": "shop_I_0dc91ae1550643ea",
+      "split": "train",
+      "response_quote": "Type-C interface: The product features a USB-C charging port, which is compatible with Type-C devices.",
+      "quote_start": 70,
+      "quote_end": 172
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6e90afee9981aafe",
+      "trajectory_id": "shop_I_6e90afee9981aafe",
+      "split": "train",
+      "response_quote": "Service: official",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_26b32f698fdd84bd",
+      "trajectory_id": "shop_I_26b32f698fdd84bd",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6187f20769b31ac6",
+      "trajectory_id": "shop_I_6187f20769b31ac6",
+      "split": "train",
+      "response_quote": "Size: Small (Diameter: 4.0cm / 1.57\")",
+      "quote_start": 70,
+      "quote_end": 107
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_62154827bdf1fa0b",
+      "trajectory_id": "shop_I_62154827bdf1fa0b",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge, ensuring authenticity and quality.",
+      "quote_start": 70,
+      "quote_end": 185
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_42f83ac3348ab2c8",
+      "trajectory_id": "shop_I_42f83ac3348ab2c8",
+      "split": "train",
+      "response_quote": "Color: Green",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7c7ea90a7546b120",
+      "trajectory_id": "shop_I_7c7ea90a7546b120",
+      "split": "train",
+      "response_quote": "Color: Blue",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_47b157746acbf893",
+      "trajectory_id": "shop_I_47b157746acbf893",
+      "split": "train",
+      "response_quote": "Material: plastic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_60fb66357445c7d1",
+      "trajectory_id": "shop_I_60fb66357445c7d1",
+      "split": "train",
+      "response_quote": "Color: Gray",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_9e027a9f223cfbc5",
+      "trajectory_id": "shop_D_9e027a9f223cfbc5",
+      "split": "train",
+      "response_quote": "Product title: 5122359710",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_51d38cd159a353b8",
+      "trajectory_id": "shop_I_51d38cd159a353b8",
+      "split": "train",
+      "response_quote": "Material: Glass",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_61384cc894237306",
+      "trajectory_id": "shop_I_61384cc894237306",
+      "split": "train",
+      "response_quote": "Output interface: 3.5mm",
+      "quote_start": 70,
+      "quote_end": 93
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_0848651bccb1e82a",
+      "trajectory_id": "shop_D_0848651bccb1e82a",
+      "split": "train",
+      "response_quote": "Title: 1903635000",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_624f48f378543bce",
+      "trajectory_id": "shop_D_624f48f378543bce",
+      "split": "train",
+      "response_quote": "Tip size: 0.5mm",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c0b0dc803acb59e8",
+      "trajectory_id": "shop_I_c0b0dc803acb59e8",
+      "split": "train",
+      "response_quote": "Free shipping service: Available",
+      "quote_start": 70,
+      "quote_end": 102
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d733aca4b46694ae",
+      "trajectory_id": "shop_I_d733aca4b46694ae",
+      "split": "train",
+      "response_quote": "Material: PU",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_178b4abf9c081dd8",
+      "trajectory_id": "shop_I_178b4abf9c081dd8",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with LazMall service, which includes a 100% authenticity guarantee, 15-day unconditional returns, and 7-day delivery.",
+      "quote_start": 70,
+      "quote_end": 235
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_954ded83afc074e0",
+      "trajectory_id": "shop_I_954ded83afc074e0",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_30de4776188d820a",
+      "trajectory_id": "shop_I_30de4776188d820a",
+      "split": "train",
+      "response_quote": "Brand: JAPAN QUALITY",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_79067e8da848f591",
+      "trajectory_id": "shop_I_79067e8da848f591",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b3c0a62ac36ed72a",
+      "trajectory_id": "shop_I_b3c0a62ac36ed72a",
+      "split": "train",
+      "response_quote": "Material: Aluminum",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ea0aac6ea2cb939f",
+      "trajectory_id": "shop_I_ea0aac6ea2cb939f",
+      "split": "train",
+      "response_quote": "Size: S",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_11318cea6bccac7d",
+      "trajectory_id": "shop_I_11318cea6bccac7d",
+      "split": "train",
+      "response_quote": "Material: Stainless steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c03e6bd8b6ea609b",
+      "trajectory_id": "shop_I_c03e6bd8b6ea609b",
+      "split": "train",
+      "response_quote": "Interface: USB 3.1 Gen 1",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_449f7f6e6cc8fb58",
+      "trajectory_id": "shop_I_449f7f6e6cc8fb58",
+      "split": "train",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5293d66f06288010",
+      "trajectory_id": "shop_I_5293d66f06288010",
+      "split": "train",
+      "response_quote": "Compatible with US plug: Yes",
+      "quote_start": 70,
+      "quote_end": 98
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_55fb5886f5fccf8f",
+      "trajectory_id": "shop_I_55fb5886f5fccf8f",
+      "split": "train",
+      "response_quote": "Size: Large",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_dc676d9f0a13d8b9",
+      "trajectory_id": "shop_I_dc676d9f0a13d8b9",
+      "split": "train",
+      "response_quote": "Material: Stainless steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_967ab42426c6d06a",
+      "trajectory_id": "shop_I_967ab42426c6d06a",
+      "split": "train",
+      "response_quote": "Interface/Port: Type-C",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_61e44921186b4990",
+      "trajectory_id": "shop_I_61e44921186b4990",
+      "split": "train",
+      "response_quote": "Size: Small",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_35a64f103e374412",
+      "trajectory_id": "shop_D_35a64f103e374412",
+      "split": "train",
+      "response_quote": "Age: 3+",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6e1e0a645944756f",
+      "trajectory_id": "shop_I_6e1e0a645944756f",
+      "split": "train",
+      "response_quote": "Interface/Port: 3.5mm",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_74ca8041e5aaf21f",
+      "trajectory_id": "shop_I_74ca8041e5aaf21f",
+      "split": "train",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a349b320bf903361",
+      "trajectory_id": "shop_I_a349b320bf903361",
+      "split": "train",
+      "response_quote": "Type-C interface/port: The selected product is a 35W Type-C to Type-C Cable, which clearly indicates it has a Type-C interface/port.",
+      "quote_start": 70,
+      "quote_end": 202
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_52bdf5f75f1a5c80",
+      "trajectory_id": "shop_I_52bdf5f75f1a5c80",
+      "split": "train",
+      "response_quote": "Interface/Port: 3.5mm",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ee84564d5a6c4574",
+      "trajectory_id": "shop_I_ee84564d5a6c4574",
+      "split": "train",
+      "response_quote": "Interface/Port: Type-C",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8cde7de7513e3e52",
+      "trajectory_id": "shop_I_8cde7de7513e3e52",
+      "split": "train",
+      "response_quote": "Size: 16 inch",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0d168bbd5f6c7413",
+      "trajectory_id": "shop_I_0d168bbd5f6c7413",
+      "split": "train",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_99f3fd32ed782fb8",
+      "trajectory_id": "shop_I_99f3fd32ed782fb8",
+      "split": "train",
+      "response_quote": "Color: Green",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5a0a7576bda11ca4",
+      "trajectory_id": "shop_I_5a0a7576bda11ca4",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_aeead72a3f90189e",
+      "trajectory_id": "shop_I_aeead72a3f90189e",
+      "split": "train",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f4ff88a8ed778cd1",
+      "trajectory_id": "shop_I_f4ff88a8ed778cd1",
+      "split": "train",
+      "response_quote": "Material: Steel (304 stainless steel)",
+      "quote_start": 70,
+      "quote_end": 107
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_6c952b80a660c5b0",
+      "trajectory_id": "shop_D_6c952b80a660c5b0",
+      "split": "train",
+      "response_quote": "Title: 40Pc Mini Hair Clips Set Cute Elastic Rubber band Cartoon Rope Hair Accessories for Girls",
+      "quote_start": 70,
+      "quote_end": 166
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_433b73482fc2bd79",
+      "trajectory_id": "shop_I_433b73482fc2bd79",
+      "split": "train",
+      "response_quote": "Interface: 3.5mm",
+      "quote_start": 69,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_73793c70fe636a4d",
+      "trajectory_id": "shop_I_73793c70fe636a4d",
+      "split": "train",
+      "response_quote": "Material: Pure copper",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_edf191d6b88204d7",
+      "trajectory_id": "shop_I_edf191d6b88204d7",
+      "split": "train",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d1f2b92e35a11bbd",
+      "trajectory_id": "shop_I_d1f2b92e35a11bbd",
+      "split": "train",
+      "response_quote": "Formulation: Alcohol-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c50df4b8a87853ca",
+      "trajectory_id": "shop_I_c50df4b8a87853ca",
+      "split": "train",
+      "response_quote": "Material: Rubber",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3eea8ac9c56c4fd6",
+      "trajectory_id": "shop_I_3eea8ac9c56c4fd6",
+      "split": "train",
+      "response_quote": "Interface/Port: 3.5mm",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5709af684824dc93",
+      "trajectory_id": "shop_I_5709af684824dc93",
+      "split": "train",
+      "response_quote": "Material: Plastic",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7fef4abdec6d35b5",
+      "trajectory_id": "shop_I_7fef4abdec6d35b5",
+      "split": "dev",
+      "response_quote": "Material: Steel",
+      "quote_start": 69,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_0d1afe97458a8b2f",
+      "trajectory_id": "shop_D_0d1afe97458a8b2f",
+      "split": "dev",
+      "response_quote": "Price: 188.0 PHP",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a8cf173b1df97081",
+      "trajectory_id": "shop_I_a8cf173b1df97081",
+      "split": "dev",
+      "response_quote": "**Material**: Aluminum (Frame: Hard pressed extruded high intensity aluminum oxidized alloy)",
+      "quote_start": 70,
+      "quote_end": 162
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_c3e98fd379bd4547",
+      "trajectory_id": "shop_D_c3e98fd379bd4547",
+      "split": "dev",
+      "response_quote": "Type: C Type Quick Release Connector",
+      "quote_start": 70,
+      "quote_end": 106
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_74dc84610dff6e58",
+      "trajectory_id": "shop_I_74dc84610dff6e58",
+      "split": "dev",
+      "response_quote": "Material: Metal casing (Powder-coated)",
+      "quote_start": 70,
+      "quote_end": 108
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_1cb81771ac47ba5a",
+      "trajectory_id": "shop_D_1cb81771ac47ba5a",
+      "split": "dev",
+      "response_quote": "Title: Arborea crash cymbals 18 inches B20 cast bronze cymbals Dragon Knight Hybrid ghost Killer Solid ghostAP",
+      "quote_start": 69,
+      "quote_end": 179
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cd56484a26bbbba1",
+      "trajectory_id": "shop_I_cd56484a26bbbba1",
+      "split": "dev",
+      "response_quote": "Size: Medium (17 x 5.7cm)",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cef2832f8a69d4b7",
+      "trajectory_id": "shop_I_cef2832f8a69d4b7",
+      "split": "dev",
+      "response_quote": "Material: The main material of the panel is high-quality tempered glass, which is not rusty, non-oxidized and easy to clean.",
+      "quote_start": 70,
+      "quote_end": 194
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4d9a2fbce7531048",
+      "trajectory_id": "shop_I_4d9a2fbce7531048",
+      "split": "dev",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c8fd924c9225a94f",
+      "trajectory_id": "shop_I_c8fd924c9225a94f",
+      "split": "dev",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1dedacc66fadc41a",
+      "trajectory_id": "shop_I_1dedacc66fadc41a",
+      "split": "dev",
+      "response_quote": "Size: XXL (WAIST 82cm, HIPLINE 86cm; for weight 65-70KG)",
+      "quote_start": 70,
+      "quote_end": 126
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ff7fee7702b9c6d3",
+      "trajectory_id": "shop_I_ff7fee7702b9c6d3",
+      "split": "dev",
+      "response_quote": "Material: 304 stainless steel",
+      "quote_start": 70,
+      "quote_end": 99
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0eb9c9a633a99f34",
+      "trajectory_id": "shop_I_0eb9c9a633a99f34",
+      "split": "dev",
+      "response_quote": "Type-C interface: Yes",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cd2864d736c3dd77",
+      "trajectory_id": "shop_I_cd2864d736c3dd77",
+      "split": "dev",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_17b6e21f0c5d8eb2",
+      "trajectory_id": "shop_I_17b6e21f0c5d8eb2",
+      "split": "dev",
+      "response_quote": "Material: 80% Polyester, 20% Polyamide",
+      "quote_start": 70,
+      "quote_end": 108
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_baeaf25a9e10b108",
+      "trajectory_id": "shop_I_baeaf25a9e10b108",
+      "split": "dev",
+      "response_quote": "Interface/Port: USB",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a43f2792900d4f57",
+      "trajectory_id": "shop_I_a43f2792900d4f57",
+      "split": "dev",
+      "response_quote": "Material: The product is made of 85% cotton and 15% polyester, meeting the hard requirement for polyester content.",
+      "quote_start": 70,
+      "quote_end": 184
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c1eb0c71fbac8336",
+      "trajectory_id": "shop_I_c1eb0c71fbac8336",
+      "split": "dev",
+      "response_quote": "Official service/badge: The product is offered with the official service/badge.",
+      "quote_start": 69,
+      "quote_end": 148
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c6bc10e2e2d51ce4",
+      "trajectory_id": "shop_I_c6bc10e2e2d51ce4",
+      "split": "dev",
+      "response_quote": "Size: 12.1*4.0*2.1cm",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_154acabf5f116ae5",
+      "trajectory_id": "shop_I_154acabf5f116ae5",
+      "split": "dev",
+      "response_quote": "Material: silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c680e20b45dee716",
+      "trajectory_id": "shop_I_c680e20b45dee716",
+      "split": "dev",
+      "response_quote": "Material: Steel",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_a1095c9fc42faed7",
+      "trajectory_id": "shop_I_a1095c9fc42faed7",
+      "split": "dev",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_44e896b0a4fd046c",
+      "trajectory_id": "shop_I_44e896b0a4fd046c",
+      "split": "dev",
+      "response_quote": "Color: Blue",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c3295ad893c25aab",
+      "trajectory_id": "shop_I_c3295ad893c25aab",
+      "split": "dev",
+      "response_quote": "Size: 2 grams per teabag",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_71a83f6cbefde878",
+      "trajectory_id": "shop_D_71a83f6cbefde878",
+      "split": "dev",
+      "response_quote": "Size: 3/8",
+      "quote_start": 70,
+      "quote_end": 79
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7f6dcabc5131884e",
+      "trajectory_id": "shop_I_7f6dcabc5131884e",
+      "split": "dev",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_51bb1ac915c6eecf",
+      "trajectory_id": "shop_I_51bb1ac915c6eecf",
+      "split": "dev",
+      "response_quote": "Official service/badge: Yes",
+      "quote_start": 70,
+      "quote_end": 97
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7e916f0165136f5d",
+      "trajectory_id": "shop_I_7e916f0165136f5d",
+      "split": "dev",
+      "response_quote": "Size: L",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e6c700784bc46c5e",
+      "trajectory_id": "shop_I_e6c700784bc46c5e",
+      "split": "dev",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_ff401d6fc21ef69c",
+      "trajectory_id": "shop_I_ff401d6fc21ef69c",
+      "split": "dev",
+      "response_quote": "Material: Wood",
+      "quote_start": 70,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9cad250b691318eb",
+      "trajectory_id": "shop_I_9cad250b691318eb",
+      "split": "dev",
+      "response_quote": "Material: Rubber",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3e109b6e442afed6",
+      "trajectory_id": "shop_I_3e109b6e442afed6",
+      "split": "dev",
+      "response_quote": "Material: Stainless steel spring",
+      "quote_start": 70,
+      "quote_end": 102
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_81c7f90a7dcd5a40",
+      "trajectory_id": "shop_I_81c7f90a7dcd5a40",
+      "split": "dev",
+      "response_quote": "Service: Official service/badge",
+      "quote_start": 70,
+      "quote_end": 101
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_0fc5689d30977203",
+      "trajectory_id": "shop_I_0fc5689d30977203",
+      "split": "dev",
+      "response_quote": "Formulation: Fragrance-free",
+      "quote_start": 70,
+      "quote_end": 97
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6c9650a24ca4e919",
+      "trajectory_id": "shop_I_6c9650a24ca4e919",
+      "split": "dev",
+      "response_quote": "Material: Aluminum",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_20ec83fa0f7e6a3b",
+      "trajectory_id": "shop_I_20ec83fa0f7e6a3b",
+      "split": "dev",
+      "response_quote": "Plug specification: US Plug (2Pin)",
+      "quote_start": 70,
+      "quote_end": 104
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_03a2a74fd875e83e",
+      "trajectory_id": "shop_I_03a2a74fd875e83e",
+      "split": "dev",
+      "response_quote": "Material: Aluminum Alloy",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_c03bd33de754cb4a",
+      "trajectory_id": "shop_D_c03bd33de754cb4a",
+      "split": "dev",
+      "response_quote": "Size: 125mm",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5766559b180867e8",
+      "trajectory_id": "shop_I_5766559b180867e8",
+      "split": "dev",
+      "response_quote": "Material: PVC",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_406d73483c963e3a",
+      "trajectory_id": "shop_I_406d73483c963e3a",
+      "split": "dev",
+      "response_quote": "Material: PU Leather+PC+PP",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_05d09e24c4fdbcf9",
+      "trajectory_id": "shop_I_05d09e24c4fdbcf9",
+      "split": "dev",
+      "response_quote": "Material: The product is made of 3cr14 stainless steel and has a beech wooden handle.",
+      "quote_start": 70,
+      "quote_end": 155
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_928c3b6c0ca71cb3",
+      "trajectory_id": "shop_I_928c3b6c0ca71cb3",
+      "split": "dev",
+      "response_quote": "Material: ABS",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_fbadb0ef525d4742",
+      "trajectory_id": "shop_I_fbadb0ef525d4742",
+      "split": "dev",
+      "response_quote": "Material: Durable plastic",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_94495e6158cda400",
+      "trajectory_id": "shop_I_94495e6158cda400",
+      "split": "dev",
+      "response_quote": "Interface/Port: 3.5mm",
+      "quote_start": 69,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cee63203f4665610",
+      "trajectory_id": "shop_I_cee63203f4665610",
+      "split": "test",
+      "response_quote": "Type-C interface/port: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_25d75e96a038e842",
+      "trajectory_id": "shop_I_25d75e96a038e842",
+      "split": "test",
+      "response_quote": "Size: 10 inches (available in the chosen size)",
+      "quote_start": 70,
+      "quote_end": 116
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c44fe630d2fe688c",
+      "trajectory_id": "shop_I_c44fe630d2fe688c",
+      "split": "test",
+      "response_quote": "Interface/Port: Type-C",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5f989794b1ce8f31",
+      "trajectory_id": "shop_I_5f989794b1ce8f31",
+      "split": "test",
+      "response_quote": "Material: plastic coated",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9e0fcedea8340571",
+      "trajectory_id": "shop_I_9e0fcedea8340571",
+      "split": "test",
+      "response_quote": "Size: 35x75",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2920fdeb5a201bdf",
+      "trajectory_id": "shop_I_2920fdeb5a201bdf",
+      "split": "test",
+      "response_quote": "Color: Red",
+      "quote_start": 70,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2ecc753fc768c482",
+      "trajectory_id": "shop_I_2ecc753fc768c482",
+      "split": "test",
+      "response_quote": "Material: Rubber P and Glass",
+      "quote_start": 70,
+      "quote_end": 98
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8783de4f441d66d8",
+      "trajectory_id": "shop_I_8783de4f441d66d8",
+      "split": "test",
+      "response_quote": "Size: (Inflated) 30*30*30cm/11.81*11.81*11.81inches (L*W*H)",
+      "quote_start": 70,
+      "quote_end": 129
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d2a2046d4f639813",
+      "trajectory_id": "shop_I_d2a2046d4f639813",
+      "split": "test",
+      "response_quote": "Material: High-quality thermoplastic resin",
+      "quote_start": 70,
+      "quote_end": 112
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_7c40ee96b3df92b1",
+      "trajectory_id": "shop_I_7c40ee96b3df92b1",
+      "split": "test",
+      "response_quote": "Official service/badge: The product has an official service/badge.",
+      "quote_start": 70,
+      "quote_end": 136
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_29205b796b584fcb",
+      "trajectory_id": "shop_I_29205b796b584fcb",
+      "split": "test",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5ff595089457a11b",
+      "trajectory_id": "shop_I_5ff595089457a11b",
+      "split": "test",
+      "response_quote": "Material: Aluminium",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2e6155491ac82cd7",
+      "trajectory_id": "shop_I_2e6155491ac82cd7",
+      "split": "test",
+      "response_quote": "Service: official",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3af36979330f5e9d",
+      "trajectory_id": "shop_I_3af36979330f5e9d",
+      "split": "test",
+      "response_quote": "Formulation: Paraben-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8daac5ea0414fb4f",
+      "trajectory_id": "shop_I_8daac5ea0414fb4f",
+      "split": "test",
+      "response_quote": "Material: Leather",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1f802050e0237845",
+      "trajectory_id": "shop_I_1f802050e0237845",
+      "split": "test",
+      "response_quote": "Color: Black",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d8d100025a1ed92f",
+      "trajectory_id": "shop_I_d8d100025a1ed92f",
+      "split": "test",
+      "response_quote": "Size: 75*45*30mm",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_06aa8e572610b83a",
+      "trajectory_id": "shop_I_06aa8e572610b83a",
+      "split": "test",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_763fde8db872cd7a",
+      "trajectory_id": "shop_I_763fde8db872cd7a",
+      "split": "test",
+      "response_quote": "Size: Small and light, easy to store and carry while going out.",
+      "quote_start": 69,
+      "quote_end": 132
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_4433fbe6fedff347",
+      "trajectory_id": "shop_D_4433fbe6fedff347",
+      "split": "test",
+      "response_quote": "Price: 1377.0 PHP",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_e36516a1c2bc1fcc",
+      "trajectory_id": "shop_D_e36516a1c2bc1fcc",
+      "split": "test",
+      "response_quote": "Price: 224.33 PHP",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c0f8ef416be48ab1",
+      "trajectory_id": "shop_I_c0f8ef416be48ab1",
+      "split": "test",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3e1e4a1220c615dd",
+      "trajectory_id": "shop_I_3e1e4a1220c615dd",
+      "split": "test",
+      "response_quote": "Service: Official service/badge",
+      "quote_start": 70,
+      "quote_end": 101
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_055f54d0e82599c4",
+      "trajectory_id": "shop_D_055f54d0e82599c4",
+      "split": "test",
+      "response_quote": "Title: 96615408 High Quality AC Heater Panel Climate Control Switch For Buick Excelle Wagon HRV Chevrolet Lacetti Optra Nubira Daewoo",
+      "quote_start": 70,
+      "quote_end": 203
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9601408a234e872f",
+      "trajectory_id": "shop_I_9601408a234e872f",
+      "split": "test",
+      "response_quote": "Size: 10.5x6.5cm",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9e6650c85ebc25f7",
+      "trajectory_id": "shop_I_9e6650c85ebc25f7",
+      "split": "test",
+      "response_quote": "Material: wood",
+      "quote_start": 70,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_680b737caa910f6a",
+      "trajectory_id": "shop_I_680b737caa910f6a",
+      "split": "test",
+      "response_quote": "Material: nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e6f605f518f551b8",
+      "trajectory_id": "shop_I_e6f605f518f551b8",
+      "split": "test",
+      "response_quote": "Official service/badge: The product is offered with the LazMall service, which guarantees authenticity, 15-day unconditional returns, and 7-day delivery.",
+      "quote_start": 69,
+      "quote_end": 222
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_63625edfca3f47af",
+      "trajectory_id": "shop_I_63625edfca3f47af",
+      "split": "test",
+      "response_quote": "Interface: USB/USB-C/Micro-USB",
+      "quote_start": 70,
+      "quote_end": 100
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_519c43d63c568852",
+      "trajectory_id": "shop_I_519c43d63c568852",
+      "split": "test",
+      "response_quote": "Official service/badge: The product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 149
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_bd69b1553a5684f0",
+      "trajectory_id": "shop_D_bd69b1553a5684f0",
+      "split": "test",
+      "response_quote": "Light source: White (6000K)",
+      "quote_start": 70,
+      "quote_end": 97
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_daefd59379311cec",
+      "trajectory_id": "shop_I_daefd59379311cec",
+      "split": "test",
+      "response_quote": "Size: 75*60CM",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_302aabf90424a7d7",
+      "trajectory_id": "shop_I_302aabf90424a7d7",
+      "split": "test",
+      "response_quote": "Color: Grey",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_63364d7e7c66c2e5",
+      "trajectory_id": "shop_I_63364d7e7c66c2e5",
+      "split": "test",
+      "response_quote": "Size: L",
+      "quote_start": 70,
+      "quote_end": 77
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9e3f088cc1ccf4f3",
+      "trajectory_id": "shop_I_9e3f088cc1ccf4f3",
+      "split": "test",
+      "response_quote": "Size: 1 Gallon",
+      "quote_start": 70,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_50755ae85942c831",
+      "trajectory_id": "shop_I_50755ae85942c831",
+      "split": "test",
+      "response_quote": "Size: 8 inch",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_def32fa617a43e75",
+      "trajectory_id": "shop_I_def32fa617a43e75",
+      "split": "test",
+      "response_quote": "Type-C interface: Yes",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_730822d5855ca212",
+      "trajectory_id": "shop_I_730822d5855ca212",
+      "split": "test",
+      "response_quote": "Material: Aluminum alloy",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2d2ce745f311dbbf",
+      "trajectory_id": "shop_I_2d2ce745f311dbbf",
+      "split": "test",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f46a872d5fec6aae",
+      "trajectory_id": "shop_I_f46a872d5fec6aae",
+      "split": "test",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge, ensuring authenticity and quality.",
+      "quote_start": 70,
+      "quote_end": 185
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_34ffdb6c2cb0edde",
+      "trajectory_id": "shop_I_34ffdb6c2cb0edde",
+      "split": "test",
+      "response_quote": "Material: Glass",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_77ae785f3659d2e0",
+      "trajectory_id": "shop_I_77ae785f3659d2e0",
+      "split": "test",
+      "response_quote": "Material: aluminium foil",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b099e0971aaa26c0",
+      "trajectory_id": "shop_I_b099e0971aaa26c0",
+      "split": "test",
+      "response_quote": "Material: Leather-textured surface",
+      "quote_start": 70,
+      "quote_end": 104
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_596dfdde949a061b",
+      "trajectory_id": "shop_I_596dfdde949a061b",
+      "split": "test",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b5b37953dcae70b2",
+      "trajectory_id": "shop_I_b5b37953dcae70b2",
+      "split": "test",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_93609a057e90603d",
+      "trajectory_id": "shop_I_93609a057e90603d",
+      "split": "test",
+      "response_quote": "Interface/Port: Lightning pattern",
+      "quote_start": 69,
+      "quote_end": 102
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c0bd449ccfbb872d",
+      "trajectory_id": "shop_I_c0bd449ccfbb872d",
+      "split": "test",
+      "response_quote": "Material: Aluminum",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cf9736918376a40d",
+      "trajectory_id": "shop_I_cf9736918376a40d",
+      "split": "test",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_111a36c4db9d024e",
+      "trajectory_id": "shop_I_111a36c4db9d024e",
+      "split": "test",
+      "response_quote": "Formulation: Paraben-free",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f569ed2f372ca8ba",
+      "trajectory_id": "shop_I_f569ed2f372ca8ba",
+      "split": "test",
+      "response_quote": "Color: Silver",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_fac4b2d110b5d841",
+      "trajectory_id": "shop_I_fac4b2d110b5d841",
+      "split": "test",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_bb845b86e9a86cef",
+      "trajectory_id": "shop_I_bb845b86e9a86cef",
+      "split": "test",
+      "response_quote": "Material: Steel",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_e0b0effaa74ce35d",
+      "trajectory_id": "shop_I_e0b0effaa74ce35d",
+      "split": "test",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8412504c75c8369d",
+      "trajectory_id": "shop_I_8412504c75c8369d",
+      "split": "test",
+      "response_quote": "Color: Purple",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_4af09af894749b45",
+      "trajectory_id": "shop_D_4af09af894749b45",
+      "split": "test",
+      "response_quote": "Title: Kirstine Pretties Kids Pretzel 227g",
+      "quote_start": 70,
+      "quote_end": 112
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_24b75df4b41fc86c",
+      "trajectory_id": "shop_I_24b75df4b41fc86c",
+      "split": "test",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c9ec361fd347836a",
+      "trajectory_id": "shop_I_c9ec361fd347836a",
+      "split": "test",
+      "response_quote": "Material: Stainless steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f30bf7e5a92ef3b2",
+      "trajectory_id": "shop_I_f30bf7e5a92ef3b2",
+      "split": "test",
+      "response_quote": "Material: Plastic Aluminum",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f04ca88b37771e37",
+      "trajectory_id": "shop_I_f04ca88b37771e37",
+      "split": "test",
+      "response_quote": "Free Shipping: Yes",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_40c5bdfbaa5cee03",
+      "trajectory_id": "shop_I_40c5bdfbaa5cee03",
+      "split": "test",
+      "response_quote": "Interface/Port: USB Type-C",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c46bcb4c9c660954",
+      "trajectory_id": "shop_I_c46bcb4c9c660954",
+      "split": "test",
+      "response_quote": "Size: Large",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4b8d393e598dea65",
+      "trajectory_id": "shop_I_4b8d393e598dea65",
+      "split": "test",
+      "response_quote": "Size: 210*210*155cm",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_38f48dbfab05a76c",
+      "trajectory_id": "shop_I_38f48dbfab05a76c",
+      "split": "test",
+      "response_quote": "Color: yellow/blue/red",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9ca1f321eab9f805",
+      "trajectory_id": "shop_I_9ca1f321eab9f805",
+      "split": "test",
+      "response_quote": "Material: Rubber wood",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_fa333e64a477dcd8",
+      "trajectory_id": "shop_D_fa333e64a477dcd8",
+      "split": "test",
+      "response_quote": "Material: Food grade silicone",
+      "quote_start": 70,
+      "quote_end": 99
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_17ed07522f82a622",
+      "trajectory_id": "shop_I_17ed07522f82a622",
+      "split": "test",
+      "response_quote": "Material: Leather",
+      "quote_start": 70,
+      "quote_end": 87
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_66a23130ee776852",
+      "trajectory_id": "shop_I_66a23130ee776852",
+      "split": "test",
+      "response_quote": "Material: PU Leather",
+      "quote_start": 70,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3b355befe4971d2b",
+      "trajectory_id": "shop_I_3b355befe4971d2b",
+      "split": "test",
+      "response_quote": "Formulation: Fragrance-Free",
+      "quote_start": 69,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_37d38256bea6ed42",
+      "trajectory_id": "shop_I_37d38256bea6ed42",
+      "split": "test",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_f3e0fca5c61dfc81",
+      "trajectory_id": "shop_D_f3e0fca5c61dfc81",
+      "split": "test",
+      "response_quote": "Title: 4in1 Back Screen Tempered Glass For Samsung Galaxy Z Flip 6 Flip5 5G 9H HD Clear Screen Protector Full Cover Camera Lens Protective Film For Galaxy Z Flip 5 Z Flip6 Glass",
+      "quote_start": 70,
+      "quote_end": 247
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5390f25a1841a71d",
+      "trajectory_id": "shop_I_5390f25a1841a71d",
+      "split": "test",
+      "response_quote": "Service: Official service/badge is available for this product.",
+      "quote_start": 70,
+      "quote_end": 132
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c19516c6a832638f",
+      "trajectory_id": "shop_I_c19516c6a832638f",
+      "split": "test",
+      "response_quote": "Official service/badge: This product is offered with LazMall service, which guarantees authenticity and includes 15-day unconditional returns and 7-day delivery.",
+      "quote_start": 70,
+      "quote_end": 231
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_612eb8e812cb2a5f",
+      "trajectory_id": "shop_I_612eb8e812cb2a5f",
+      "split": "test",
+      "response_quote": "Size: 60cm * 45cm * 145cm",
+      "quote_start": 69,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_89233c4589b859f6",
+      "trajectory_id": "shop_I_89233c4589b859f6",
+      "split": "test",
+      "response_quote": "Size: Small (height 2.5cm 0.98in, length 1.8cm 0.7in)",
+      "quote_start": 70,
+      "quote_end": 123
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_98439eaa0ba37038",
+      "trajectory_id": "shop_I_98439eaa0ba37038",
+      "split": "test",
+      "response_quote": "Material: Polyester",
+      "quote_start": 70,
+      "quote_end": 89
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_dad0b2ec5b7b03ca",
+      "trajectory_id": "shop_I_dad0b2ec5b7b03ca",
+      "split": "test",
+      "response_quote": "Color: Blue",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_fa66965d47cf89f9",
+      "trajectory_id": "shop_I_fa66965d47cf89f9",
+      "split": "test",
+      "response_quote": "Free shipping service: Yes",
+      "quote_start": 70,
+      "quote_end": 96
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_eca9f983c9ca4aa1",
+      "trajectory_id": "shop_I_eca9f983c9ca4aa1",
+      "split": "test",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_f3a85ad57199894b",
+      "trajectory_id": "shop_I_f3a85ad57199894b",
+      "split": "test",
+      "response_quote": "Color: Gray (as per the user's hard requirement)",
+      "quote_start": 70,
+      "quote_end": 118
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_c767b7f705c2e9ba",
+      "trajectory_id": "shop_I_c767b7f705c2e9ba",
+      "split": "test",
+      "response_quote": "Size: Frame height 51mm; Temple length 152mm; Frame type 51mm; Nose spacing 20mm",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_24369eaa023db0a1",
+      "trajectory_id": "shop_I_24369eaa023db0a1",
+      "split": "test",
+      "response_quote": "Color: Gold",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_32c716faed71d0fd",
+      "trajectory_id": "shop_I_32c716faed71d0fd",
+      "split": "test",
+      "response_quote": "Title: Gasoline Chainsaw 18/20/22 Inches Portable Power Saw 52CC High Power Electric Saw Original Steel Chain Saw Power Tools Wood Cutting Saw Outdoor Power Tools Logging Saw",
+      "quote_start": 70,
+      "quote_end": 244
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_454ec6e51e756644",
+      "trajectory_id": "shop_D_454ec6e51e756644",
+      "split": "test",
+      "response_quote": "Price: 93.0 PHP",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6e03e48991759660",
+      "trajectory_id": "shop_I_6e03e48991759660",
+      "split": "test",
+      "response_quote": "Official service/badge: This product is offered with the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 150
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_a8ef55c08a8cbb3b",
+      "trajectory_id": "shop_D_a8ef55c08a8cbb3b",
+      "split": "test",
+      "response_quote": "Price: 56.09 PHP",
+      "quote_start": 70,
+      "quote_end": 86
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_68a29b90b50621f8",
+      "trajectory_id": "shop_I_68a29b90b50621f8",
+      "split": "test",
+      "response_quote": "Material: Linen",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_fd337d372a24be19",
+      "trajectory_id": "shop_I_fd337d372a24be19",
+      "split": "test",
+      "response_quote": "Interface/Port: Type-C",
+      "quote_start": 70,
+      "quote_end": 92
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_fd7fe4f99a64d85f",
+      "trajectory_id": "shop_I_fd7fe4f99a64d85f",
+      "split": "test",
+      "response_quote": "Material: Aluminum Alloy",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_77f4ec7958e7105b",
+      "trajectory_id": "shop_I_77f4ec7958e7105b",
+      "split": "test",
+      "response_quote": "HDMI interface: The product has an HDMI 2.1 interface.",
+      "quote_start": 70,
+      "quote_end": 124
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_2fc511db7dbf1c1a",
+      "trajectory_id": "shop_I_2fc511db7dbf1c1a",
+      "split": "test",
+      "response_quote": "Service: Official service/badge",
+      "quote_start": 70,
+      "quote_end": 101
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5f54e759eaf76d2a",
+      "trajectory_id": "shop_I_5f54e759eaf76d2a",
+      "split": "test",
+      "response_quote": "Material: Tempered Glass",
+      "quote_start": 70,
+      "quote_end": 94
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_cbe57f64c1c2e06b",
+      "trajectory_id": "shop_I_cbe57f64c1c2e06b",
+      "split": "test",
+      "response_quote": "Official service/badge: 100% Authentic; Shipped from Tokyo, Japan",
+      "quote_start": 70,
+      "quote_end": 135
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_5c2b1cc27bbab8b1",
+      "trajectory_id": "shop_I_5c2b1cc27bbab8b1",
+      "split": "test",
+      "response_quote": "Charging Port: Type-C",
+      "quote_start": 70,
+      "quote_end": 91
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9397403c22e7cf8b",
+      "trajectory_id": "shop_I_9397403c22e7cf8b",
+      "split": "test",
+      "response_quote": "Color: Gold",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_aafb705d57294ab9",
+      "trajectory_id": "shop_I_aafb705d57294ab9",
+      "split": "test",
+      "response_quote": "Material: nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_33134a1e135ee40e",
+      "trajectory_id": "shop_I_33134a1e135ee40e",
+      "split": "test",
+      "response_quote": "Material: Nylon",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_1f242b7ad21b6936",
+      "trajectory_id": "shop_I_1f242b7ad21b6936",
+      "split": "test",
+      "response_quote": "Color: Brown",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_96c121f3bdbef98d",
+      "trajectory_id": "shop_I_96c121f3bdbef98d",
+      "split": "test",
+      "response_quote": "Material: Made from high quality material, it is reliable and durable.",
+      "quote_start": 70,
+      "quote_end": 140
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_64f5f051ae203be2",
+      "trajectory_id": "shop_I_64f5f051ae203be2",
+      "split": "test",
+      "response_quote": "Size: 14 inch",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_b69ce4f85a4263dc",
+      "trajectory_id": "shop_I_b69ce4f85a4263dc",
+      "split": "test",
+      "response_quote": "Interface/Port: USB C",
+      "quote_start": 69,
+      "quote_end": 90
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_20781de75f313681",
+      "trajectory_id": "shop_I_20781de75f313681",
+      "split": "test",
+      "response_quote": "Color: Yellow",
+      "quote_start": 70,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_8ad790490da3bcc5",
+      "trajectory_id": "shop_I_8ad790490da3bcc5",
+      "split": "test",
+      "response_quote": "Material: Shell:100% Polyester; Stuffing:60%Polyester,40%PP(Polypropylene)",
+      "quote_start": 70,
+      "quote_end": 144
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_71943fd3c02524bc",
+      "trajectory_id": "shop_D_71943fd3c02524bc",
+      "split": "test",
+      "response_quote": "Price: 99.0 PHP",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_84ccdae21aaecd4c",
+      "trajectory_id": "shop_D_84ccdae21aaecd4c",
+      "split": "test",
+      "response_quote": "Color: White",
+      "quote_start": 70,
+      "quote_end": 82
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_943b12e0f088210a",
+      "trajectory_id": "shop_I_943b12e0f088210a",
+      "split": "test",
+      "response_quote": "Interface: USB",
+      "quote_start": 69,
+      "quote_end": 83
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6e1bfd4e0cade01d",
+      "trajectory_id": "shop_I_6e1bfd4e0cade01d",
+      "split": "test",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_12b5034c1e33f89c",
+      "trajectory_id": "shop_I_12b5034c1e33f89c",
+      "split": "test",
+      "response_quote": "Official service/badge: This product has the official service/badge.",
+      "quote_start": 70,
+      "quote_end": 138
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_9edfdc297d19bb8f",
+      "trajectory_id": "shop_I_9edfdc297d19bb8f",
+      "split": "test",
+      "response_quote": "Size: large",
+      "quote_start": 70,
+      "quote_end": 81
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_50e31cfd5d9c5526",
+      "trajectory_id": "shop_I_50e31cfd5d9c5526",
+      "split": "test",
+      "response_quote": "Size: Chain length approximately 44cm, extension chain approximately 5cm",
+      "quote_start": 70,
+      "quote_end": 142
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_090724f74a819c4e",
+      "trajectory_id": "shop_I_090724f74a819c4e",
+      "split": "test",
+      "response_quote": "Official service/badge: This product supports payment on delivery (COD) and is listed with a LazMall service badge, ensuring authenticity and quality.",
+      "quote_start": 70,
+      "quote_end": 220
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_3e42ba04e1bda2ff",
+      "trajectory_id": "shop_I_3e42ba04e1bda2ff",
+      "split": "test",
+      "response_quote": "Type C interface/port: The product is a USB HUB with a Type C interface.",
+      "quote_start": 70,
+      "quote_end": 142
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_D_c78e574468c927bc",
+      "trajectory_id": "shop_D_c78e574468c927bc",
+      "split": "test",
+      "response_quote": "Price: 649 PHP",
+      "quote_start": 70,
+      "quote_end": 84
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_eb237bcc3680f26c",
+      "trajectory_id": "shop_I_eb237bcc3680f26c",
+      "split": "test",
+      "response_quote": "Color: gold",
+      "quote_start": 69,
+      "quote_end": 80
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_aa95b02c7f0f14de",
+      "trajectory_id": "shop_I_aa95b02c7f0f14de",
+      "split": "test",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_d9c984873200498f",
+      "trajectory_id": "shop_I_d9c984873200498f",
+      "split": "test",
+      "response_quote": "3.5mm interface/port: The product has a 3.5mm port for audio input.",
+      "quote_start": 70,
+      "quote_end": 137
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_522daf6b66aed426",
+      "trajectory_id": "shop_I_522daf6b66aed426",
+      "split": "test",
+      "response_quote": "Material: Silicone",
+      "quote_start": 70,
+      "quote_end": 88
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_43c953ec3aa87cf0",
+      "trajectory_id": "shop_I_43c953ec3aa87cf0",
+      "split": "test",
+      "response_quote": "Material: Metal",
+      "quote_start": 70,
+      "quote_end": 85
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_4b9198ed1d203e5b",
+      "trajectory_id": "shop_I_4b9198ed1d203e5b",
+      "split": "test",
+      "response_quote": "Size: 0.4 x 0.6 inch (Approx.)",
+      "quote_start": 70,
+      "quote_end": 100
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6bcaee00bc530668",
+      "trajectory_id": "shop_I_6bcaee00bc530668",
+      "split": "test",
+      "response_quote": "Material: Stainless Steel",
+      "quote_start": 70,
+      "quote_end": 95
+    },
+    {
+      "instance_audit_key": "gold_clean:shop_I_6ac15f83f5bed12c",
+      "trajectory_id": "shop_I_6ac15f83f5bed12c",
+      "split": "test",
+      "response_quote": "Material: Linen",
+      "quote_start": 70,
+      "quote_end": 85
+    }
+  ]
+}

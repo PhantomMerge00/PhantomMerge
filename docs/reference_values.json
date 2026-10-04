@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "status": "paper_reference_only_not_recomputed",
+  "purpose": "Independent expected values for comparison with metrics computed from instance-level artifacts; never use this file as computed output.",
+  "paper_sha256": "28f1d274c96abd3e01d4761619409dfd25f1eab307693053859145ad39552746",
+  "shopping_detection": {
+    "claims": 274,
+    "trajectories": 243,
+    "pm_positive": 156,
+    "correctly_bound": 118,
+    "splits": {"train": 772, "development": 198, "test": 274},
+    "agr_partitions": {"probe": 393, "calibration": 289, "fusion": 288},
+    "readouts": {
+      "representational": {"auroc": 0.888, "ap": 0.908, "reported_decimal_places": 3},
+      "jacobian_slot": {"auroc": 0.8942, "ap": 0.9089, "reported_decimal_places": 4},
+      "agr_value": {"auroc": 0.8976, "ap": 0.9179, "reported_decimal_places": 4},
+      "agr_slot": {"auroc": 0.9618, "ap": 0.9730, "reported_decimal_places": 4}
+    },
+    "agr_value_availability": {"calibration_available": 23, "test_available": 48, "test_fallback": 226},
+    "template_strata": {
+      "overlap": {"n": 181, "pm_positive": 108, "agr_slot_auroc": 0.972, "representational_auroc": 0.903, "tfidf_auroc": 0.783},
+      "non_overlap": {"n": 93, "pm_positive": 48, "agr_slot_auroc": 0.950, "representational_auroc": 0.882, "tfidf_auroc": 0.756}
+    },
+    "threshold_operating_points": [
+      {"method": "jacobian_slot", "selection_split": "representational_development", "threshold": -7.064, "tp": 120, "fp": 0, "fn": 36, "tn": 118},
+      {"method": "agr_value", "selection_split": "D_f", "threshold": -0.7585, "tp": 146, "fp": 45, "fn": 10, "tn": 73},
+      {"method": "agr_slot", "selection_split": "D_f", "threshold": -8.822, "tp": 136, "fp": 12, "fn": 20, "tn": 106},
+      {"method": "agr_slot", "selection_split": "representational_development", "threshold": -12.714, "tp": 147, "fp": 27, "fn": 9, "tn": 91}
+    ]
+  },
+  "shopping_mitigation": {
+    "initial_trajectory_pm": 0.514,
+    "fac_complete": {"residual_pm": 0.062, "output_claim_ratio": 0.807},
+    "shared_gate": {"score": "p_pm", "comparison": ">", "threshold": 0.05},
+    "shared_results": {
+      "fac": {"residual_pm": 0.053, "output_claim_ratio": 0.593},
+      "fad": {"residual_pm": 0.053, "output_claim_ratio": 0.358},
+      "rarr": {"residual_pm": 0.053, "output_claim_ratio": 0.370}
+    },
+    "branch_counts": {"input": 274, "flagged": 187, "unflagged": 87, "copy_rewrite": 57, "probe_only_delete": 125, "remaining": 5},
+    "human_rewrite_audit": {"claims": 57, "author_confirmed_complete": true, "records_organized": false, "independently_verified_in_this_task": false},
+    "ratio_aggregation": "unresolved_requires_implementation_audit",
+    "figure6_gate_configurations": "unresolved_do_not_infer_from_detection_thresholds"
+  },
+  "figure3_auroc": {
+    "column_order": ["representational", "jacobian_slot", "agr_value", "agr_slot"],
+    "shopping": [0.89, 0.89, 0.90, 0.96],
+    "telecom": [0.94, 0.90, 0.94, 0.78],
+    "airline": [0.83, 0.70, 0.82, 0.69],
+    "retail": [0.87, 0.79, 0.87, 0.60],
+    "training_configuration_status": "must_be_resolved_per_cell"
+  },
+  "figure6_reported_percentages": {
+    "agr_slot": {"pm_free": 95, "cb_retention": 63},
+    "agr_value": {"pm_free": 96, "cb_retention": 62},
+    "representational": {"pm_free": 91, "cb_retention": 73}
+  },
+  "unresolved_items": [
+    "output_claim_ratio_aggregation",
+    "post_intervention_evaluator_and_denominators",
+    "figure6_gate_scores_and_thresholds",
+    "figure3_training_and_calibration_configuration_per_cell",
+    "table1_subtype_normalization_with_overlapping_labels",
+    "source_records_for_duplicate_baseline_rows",
+    "human_rewrite_audit_record_packaging"
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "generated_at_utc": "2026-09-26T05:27:11.746008+00:00",
+  "rerun_command": "cd ${PHANTOM_MERGE_ROOT} && PYTHONPATH=ccer:third_party/jacobian-lens python scripts/phantom-merge reproduce",
+  "cohort_verification": {
+    "n_test_line_a": 274,
+    "n_pm_line_a": 156,
+    "n_cb_line_a": 118,
+    "n_test_agr": 274,
+    "n_pm_agr": 156,
+    "claim_id_set_equal": true,
+    "n_intersection": 274,
+    "label_mismatches": [],
+    "z2_available_test": 48,
+    "z2_unavailable_test": 226
+  },
+  "fusion_meta": {
+    "calibration": {
+      "z1": {
+        "a": 0.29528403628180017,
+        "c": 0.1115926964473668
+      },
+      "z2": {
+        "a": 0.03796641571200753,
+        "c": -2.4278401183324974
+      },
+      "cal_split": "D_c",
+      "z2_cal_n": 23
+    },
+    "fusion_weights": {
+      "w1": 0.6956221204666246,
+      "w2": 0.15925144641012415,
+      "b": -0.22053874803994275,
+      "interaction": false,
+      "use_calibrated": true,
+      "fit_split": "D_f"
+    },
+    "agr_z2_fallback": "When z2_available=false, full_fusion score degrades to calibrated z1′ (representational only); see fusion.py fusion_score mode=full_fusion."
+  },
+  "methods": {
+    "Jacobian": {
+      "paper_label": "Jacobian",
+      "method_id": "D-JSL",
+      "detector_id": null,
+      "score_key_line_a": "log_slot_mass",
+      "score_key_agr": null,
+      "higher_is_riskier": true,
+      "score_definition": "log π_J(T_slot|h): log-sum of J-lens top-k softmax mass over slot-type lexicon (prism_audit.jsonl field log_slot_mass). NOT BindSurprise (no ℓ_pm term).",
+      "data_source": "artifacts/... via PRISM_AUDIT_JSONL (frozen prism audit batch)",
+      "crossover_note": "Table-2 headline uses prism_audit bind_surprise AUROC≈0.962; target_fusion crossover ~0.915 is alternate fusion on anchor-value z2, not this row.",
+      "ranking_test": {
+        "auroc": 0.8942307692307692,
+        "ap": 0.9088994946659179,
+        "auroc_bootstrap": {
+          "auroc": 0.8942307692307692,
+          "ci_low": 0.8510451958259927,
+          "ci_high": 0.9341361073473491,
+          "n_boot_effective": 2000,
+          "n_boot_requested": 2000
+        },
+        "ap_bootstrap": {
+          "ap": 0.9088994946659179,
+          "ci_low": 0.8689969626994349,
+          "ci_high": 0.942696263962035,
+          "n_boot_effective": 2000,
+          "n_boot_requested": 2000,
+          "method": "cluster_bootstrap_trajectory"
+        },
+        "registry_reference_auroc": 0.8942307692307692
+      },
+      "group_A_unified_tau_0.05": {
+        "applicable_to_main_table": false,
+        "reason": "log_slot_mass is unbounded log-mass, not a probability; τ=0.05 on raw score is not protocol-valid.",
+        "diagnostic_raw_score_at_0.05": {
+          "threshold": 0.05,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 156,
+          "tn": 118,
+          "n_missing_score": 0
+        },
+        "diagnostic_exp_mass_at_0.05": {
+          "note": "exp(log_slot_mass) is in (0,1] but unc calibrated; shown for transparency only.",
+          "threshold": 0.05,
+          "precision": 1.0,
+          "recall": 0.3525641025641026,
+          "f1": 0.5213270142180095,
+          "tp": 55,
+          "fp": 0,
+          "fn": 101,
+          "tn": 118,
+          "n_missing_score": 0
+        }
+      },
+      "group_B_method_specific": {
+        "tau_dev_median_pos_log_slot": {
+          "threshold": -3.401396016096167,
+          "source_split": "line_a dev",
+          "selection_rule": "median log_slot_mass among dev PM positives (fit_log_slot_threshold; quadrant/decomposition protocol)",
+          "metrics": {
+            "threshold": -3.401396016096167,
+            "precision": 1.0,
+            "recall": 0.41025641025641024,
+            "f1": 0.5818181818181819,
+            "tp": 64,
+            "fp": 0,
+            "fn": 92,
+            "tn": 118,
+            "n_missing_score": 0
+          }
+        },
+        "tau_dev_f1_log_slot": {
+          "threshold": -7.063798596521824,
+          "source_split": "line_a dev",
+          "selection_rule": "maximize F1 on dev; tie-break: sklearn unique-score order (fit_threshold_f1)",
+          "metrics": {
+            "threshold": -7.063798596521824,
+            "precision": 1.0,
+            "recall": 0.7692307692307693,
+            "f1": 0.8695652173913044,
+            "tp": 120,
+            "fp": 0,
+            "fn": 36,
+            "tn": 118,
+            "n_missing_score": 0
+          },
+          "degeneracy_note": "FP=0 on test at this threshold (registry known_degeneracy_cases D-JSL)."
+        }
+      }
+    },
+    "AGR-value": {
+      "paper_label": "AGR-value",
+      "method_id": "D-AGR",
+      "detector_id": "agr_rho",
+      "score_key_line_a": null,
+      "score_key_agr": "agr_rho_logit",
+      "prob_field": "agr_p_rho",
+      "higher_is_riskier": true,
+      "score_definition": "AGR ρ(c) detection logit: w1·z1′ + w2·z2′ + b on D_f-fitted fusion weights; z2=anchor-value log mass when z2_available else fallback to z1′ only (probe-only path).",
+      "data_source": "build_unified_detector_rows() + DETECTOR_COMPARISON_SUMMARY.json",
+      "ranking_test": {
+        "auroc": 0.8975988700564972,
+        "ap": 0.9178935502344536,
+        "auroc_bootstrap": {
+          "auroc": 0.8975988700564972,
+          "ci_low": 0.8573016361468685,
+          "ci_high": 0.9325437044187044,
+          "n_boot_effective": 2000,
+          "n_boot_requested": 2000
+        },
+        "ap_bootstrap": {
+          "ap": 0.9178935502344536,
+          "ci_low": 0.8723099099302586,
+          "ci_high": 0.952488074283022,
+          "n_boot_effective": 2000,
+          "n_boot_requested": 2000,
+          "method": "cluster_bootstrap_trajectory"
+        },
+        "registry_reference_auroc": 0.8975988700564972,
+        "detector_comparison_detection_test": {
+          "auroc": 0.8975988700564972,
+          "threshold": -0.7584534460240301,
+          "precision": 0.7643979057591623,
+          "recall": 0.9358974358974359,
+          "f1": 0.8414985590778098,
+          "tp": 146,
+          "fp": 45,
+          "fn": 10,
+          "tn": 73
+        }
+      },
+      "group_A_unified_tau_0.05": {
+        "applicable_to_main_table": true,
+        "rule": "Flag if σ(agr_rho_logit) >= 0.05 (proper probability map; do NOT threshold raw logit).",
+        "metrics_sigmoid_probability": {
+          "threshold": 0.05,
+          "precision": 0.6126482213438735,
+          "recall": 0.9935897435897436,
+          "f1": 0.7579462102689486,
+          "tp": 155,
+          "fp": 98,
+          "fn": 1,
+          "tn": 20,
+          "n_missing_score": 0
+        },
+        "diagnostic_raw_logit_at_0.05_invalid": {
+          "threshold": 0.05,
+          "precision": 0.8311688311688312,
+          "recall": 0.8205128205128205,
+          "f1": 0.8258064516129032,
+          "tp": 128,
+          "fp": 26,
+          "fn": 28,
+          "tn": 92,
+          "n_missing_score": 0
+        }
+      },
+      "group_B_method_specific": {
+        "tau_D_f_f1": {
+          "threshold": -0.7584534460240301,
+          "source_split": "AGR D_f (288 claims; fusion weights also fit on D_f)",
+          "selection_rule": "maximize F1 on D_f (frozen in DETECTOR_COMPARISON_SUMMARY.json)",
+          "metrics": {
+            "threshold": -0.7584534460240301,
+            "precision": 0.7643979057591623,
+            "recall": 0.9358974358974359,
+            "f1": 0.8414985590778098,
+            "tp": 146,
+            "fp": 45,
+            "fn": 10,
+            "tn": 73,
+            "n_missing_score": 0
+          },
+          "detector_comparison_crosscheck": {
+            "auroc": 0.8975988700564972,
+            "threshold": -0.7584534460240301,
+            "precision": 0.7643979057591623,
+            "recall": 0.9358974358974359,
+            "f1": 0.8414985590778098,
+            "tp": 146,
+            "fp": 45,
+            "fn": 10,
+            "tn": 73
+          },
+          "not_independent_validation": "D_f used for fusion weight fitting and threshold selection; not a hold-out threshold set."
+        }
+      }
+    },
+    "AGR-slot": {
+      "paper_label": "AGR-slot",
+      "method_id": "D-BIND",
+      "detector_id": "bind_surprise",
+      "score_key_line_a": "bind_surprise",
+      "score_key_agr": "bind_surprise",
+      "higher_is_riskier": true,
+      "score_definition": "BindSurprise B = ℓ_pm(h) + log π_J(T_slot|h) from frozen prism_audit.jsonl; J-lens top-k=50 slot-lexicon readout (not crossover fusion).",
+      "data_source": "prism_audit.jsonl bind_surprise (merged into AGR rows via audit index)",
+      "ranking_test": {
+        "auroc": 0.9617557583659279,
+        "ap": 0.9730273976241659,
+        "auroc_bootstrap": {
+          "auroc": 0.9617557583659279,
+          "ci_low": 0.9396792253317833,
+          "ci_high": 0.9787420886892536,
+          "n_boot_effective": 2000,
+          "n_boot_requested": 2000
+        },
+        "ap_bootstrap": {
+          "ap": 0.9730273976241659,
+          "ci_low": 0.9545913530101849,
+          "ci_high": 0.9859138887786326,
+          "n_boot_effective": 2000,
+          "n_boot_requested": 2000,
+          "method": "cluster_bootstrap_trajectory"
+        },
+        "registry_reference_auroc": 0.9617557583659279,
+        "detector_comparison_detection_test": {
+          "auroc": 0.9617557583659279,
+          "threshold": -8.821548238912582,
+          "precision": 0.918918918918919,
+          "recall": 0.8717948717948718,
+          "f1": 0.8947368421052632,
+          "tp": 136,
+          "fp": 12,
+          "fn": 20,
+          "tn": 106
+        }
+      },
+      "group_A_unified_tau_0.05": {
+        "applicable_to_main_table": false,
+        "reason": "bind_surprise is log-additive binding score, not a calibrated probability.",
+        "diagnostic_raw_score_at_0.05": {
+          "threshold": 0.05,
+          "precision": 1.0,
+          "recall": 0.5192307692307693,
+          "f1": 0.6835443037974684,
+          "tp": 81,
+          "fp": 0,
+          "fn": 75,
+          "tn": 118,
+          "n_missing_score": 0
+        },
+        "diagnostic_sigmoid_map_at_0.05": {
+          "note": "σ(bind_surprise) is monotonic but not trained calibration; optional diagnostic only.",
+          "threshold": 0.05,
+          "precision": 0.9900990099009901,
+          "recall": 0.6410256410256411,
+          "f1": 0.7782101167315176,
+          "tp": 100,
+          "fp": 1,
+          "fn": 56,
+          "tn": 117,
+          "n_missing_score": 0
+        }
+      },
+      "group_B_method_specific": {
+        "tau_D_f_f1": {
+          "threshold": -8.821548238912582,
+          "source_split": "AGR D_f",
+          "selection_rule": "maximize F1 on D_f (DETECTOR_COMPARISON_SUMMARY.json τ_D_f)",
+          "metrics": {
+            "threshold": -8.821548238912582,
+            "precision": 0.918918918918919,
+            "recall": 0.8717948717948718,
+            "f1": 0.8947368421052632,
+            "tp": 136,
+            "fp": 12,
+            "fn": 20,
+            "tn": 106,
+            "n_missing_score": 0
+          },
+          "detector_comparison_crosscheck": {
+            "auroc": 0.9617557583659279,
+            "threshold": -8.821548238912582,
+            "precision": 0.918918918918919,
+            "recall": 0.8717948717948718,
+            "f1": 0.8947368421052632,
+            "tp": 136,
+            "fp": 12,
+            "fn": 20,
+            "tn": 106
+          }
+        },
+        "tau_line_a_dev_f1_bind": {
+          "threshold": -12.714091710101942,
+          "source_split": "line_a dev",
+          "selection_rule": "maximize F1 on line_a dev (fit_tau_b; prism audit protocol)",
+          "metrics": {
+            "threshold": -12.714091710101942,
+            "precision": 0.8448275862068966,
+            "recall": 0.9423076923076923,
+            "f1": 0.890909090909091,
+            "tp": 147,
+            "fp": 27,
+            "fn": 9,
+            "tn": 91,
+            "n_missing_score": 0
+          }
+        }
+      }
+    }
+  }
+}

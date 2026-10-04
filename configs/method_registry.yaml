@@ -1,0 +1,44 @@
+schema_version: 1
+methods:
+  representational:
+    public_name: Representational readout
+    score_key: p_pm
+    higher_is_riskier: true
+    notes: Frozen Line-A probe probability at claim onset; layer from experiment config.
+  jacobian_slot:
+    public_name: Jacobian-slot
+    score_key: log_slot_mass
+    higher_is_riskier: true
+    notes: log pi_J(T_slot|h) only; does not add probe logit.
+  agr_value:
+    public_name: AGR-value
+    score_key: agr_rho_logit
+    probability_map: sigmoid
+    higher_is_riskier: true
+    z2_available_test_n: 48
+    z2_fallback_test_n: 226
+    notes: Calibrated fusion logit; missing anchor-value readout falls back to representational path.
+  agr_slot:
+    public_name: AGR-slot
+    score_key: bind_surprise
+    higher_is_riskier: true
+    definition: "logit(p_pm) + log_slot_mass"
+    notes: BindSurprise from prism audit; not TARGET_FUSION crossover (~0.915 AUROC variants).
+thresholds:
+  shopping_shared_gate:
+    score: p_pm
+    op: ">"
+    value: 0.05
+    use: mitigation_gate_only
+  agr_value_detection_D_f:
+    score: agr_rho_logit
+    value: -0.7585
+    selection: max_f1_on_D_f
+  agr_slot_detection_D_f:
+    score: bind_surprise
+    value: -8.822
+    selection: max_f1_on_D_f
+  jacobian_slot_detection_dev:
+    score: log_slot_mass
+    value: -7.064
+    selection: max_f1_on_line_a_dev

@@ -1,0 +1,4 @@
+# Placeholder — L2 demo not run in L1 release
+status: not_implemented
+agent_model: Qwen3-32B
+rewrite_model: Qwen3-8B

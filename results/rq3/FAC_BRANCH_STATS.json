@@ -1,0 +1,283 @@
+{
+  "schema": "fac_branch_stats_v1",
+  "domains": {
+    "shopping": {
+      "domain": "shopping",
+      "gated_pm_rate_conservative": 0.053497942386831275,
+      "cb_retention_conservative": 0.6271186440677966,
+      "claims_retained_mean": 0.5925925925925926,
+      "tiered_routing": {
+        "tau": 0.05,
+        "n_total": 274,
+        "n_flagged": 187,
+        "n_keep": 87,
+        "n_delete": 130,
+        "n_rewrite": 57,
+        "n_extractive_rewrite": 0,
+        "n_fallback_rewrite": 0,
+        "rewrite_rate_among_flagged": 0.3048128342245989,
+        "delete_rate_among_flagged": 0.6951871657754011,
+        "by_pm_type_flagged": {
+          "AH": {
+            "flagged": 4,
+            "delete": 3,
+            "rewrite": 1
+          },
+          "CEM": {
+            "flagged": 24,
+            "delete": 14,
+            "rewrite": 10
+          },
+          "CAP": {
+            "flagged": 115,
+            "delete": 69,
+            "rewrite": 46
+          },
+          "clean_expansion": {
+            "flagged": 44,
+            "delete": 44,
+            "rewrite": 0
+          }
+        },
+        "by_branch": {
+          "prism_l_copy": 57,
+          "prism_probe_only_delete": 125,
+          "prism_keep": 87,
+          "prism_l_stack_fail": 5
+        }
+      },
+      "quality_metrics": {
+        "n_flagged": 187,
+        "n_rewrite": 57,
+        "grounded_rate": 1.0,
+        "format_valid_rate": 1.0,
+        "stub_rate": 0.0,
+        "n_verified_grounded": 57,
+        "n_format_valid": 57,
+        "n_stub": 0
+      },
+      "anchor_evidence_attribution": {
+        "n_rewrite_flagged": 57,
+        "n_anchor_grounded_scorable": 57,
+        "n_anchor_grounded": 57,
+        "anchor_evidence_attribution_rate": 1.0
+      },
+      "rewrite_log": {
+        "n_flagged_test": 314,
+        "by_branch": {
+          "prism_l_copy": 104,
+          "prism_probe_only_delete": 202,
+          "prism_l_stack_fail": 8
+        },
+        "by_action": {
+          "rewrite": 104,
+          "delete": 210
+        },
+        "n_rewrite_with_quote_after": 104,
+        "cb_false_delete_among_flagged_clean": 59
+      }
+    },
+    "telecom": {
+      "domain": "telecom",
+      "gated_pm_rate_conservative": 0.47643979057591623,
+      "cb_retention_conservative": 0.9560439560439561,
+      "claims_retained_mean": 1.0052356020942408,
+      "tiered_routing": {
+        "tau": 0.999796360655038,
+        "n_total": 253,
+        "n_flagged": 159,
+        "n_keep": 90,
+        "n_delete": 61,
+        "n_rewrite": 102,
+        "n_extractive_rewrite": 0,
+        "n_fallback_rewrite": 0,
+        "rewrite_rate_among_flagged": 0.6415094339622641,
+        "delete_rate_among_flagged": 0.3836477987421384,
+        "by_pm_type_flagged": {
+          "CEM": {
+            "flagged": 159,
+            "delete": 57,
+            "rewrite": 102
+          }
+        },
+        "by_branch": {
+          "prism_l_copy": 102,
+          "prism_probe_only_delete": 56,
+          "prism_keep": 90,
+          "heuristic_anchor_miss": 5
+        }
+      },
+      "quality_metrics": {
+        "n_flagged": 159,
+        "n_rewrite": 102,
+        "grounded_rate": 0.0,
+        "format_valid_rate": 0.06862745098039216,
+        "stub_rate": 0.0,
+        "n_verified_grounded": 0,
+        "n_format_valid": 7,
+        "n_stub": 0
+      },
+      "anchor_evidence_attribution": {
+        "n_rewrite_flagged": 102,
+        "n_anchor_grounded_scorable": 0,
+        "n_anchor_grounded": 0,
+        "anchor_evidence_attribution_rate": null
+      },
+      "rewrite_log": {
+        "n_flagged_test": 159,
+        "by_branch": {
+          "prism_l_copy": 102,
+          "prism_probe_only_delete": 56,
+          "heuristic_anchor_miss": 1
+        },
+        "by_action": {
+          "rewrite": 102,
+          "delete": 57
+        },
+        "n_rewrite_with_quote_after": 102,
+        "cb_false_delete_among_flagged_clean": 0
+      }
+    },
+    "airline": {
+      "domain": "airline",
+      "gated_pm_rate_conservative": 0.010869565217391304,
+      "cb_retention_conservative": 0.9795918367346939,
+      "claims_retained_mean": 0.7934782608695652,
+      "tiered_routing": {
+        "tau": 0.04644077684228931,
+        "n_total": 188,
+        "n_flagged": 41,
+        "n_keep": 144,
+        "n_delete": 42,
+        "n_rewrite": 2,
+        "n_extractive_rewrite": 0,
+        "n_fallback_rewrite": 0,
+        "rewrite_rate_among_flagged": 0.04878048780487805,
+        "delete_rate_among_flagged": 1.024390243902439,
+        "by_pm_type_flagged": {
+          "AH": {
+            "flagged": 19,
+            "delete": 17,
+            "rewrite": 2
+          },
+          "CEM": {
+            "flagged": 8,
+            "delete": 8,
+            "rewrite": 0
+          },
+          "CAP": {
+            "flagged": 14,
+            "delete": 14,
+            "rewrite": 0
+          }
+        },
+        "by_branch": {
+          "prism_keep": 144,
+          "prism_probe_only_delete": 39,
+          "heuristic_anchor_miss": 3,
+          "prism_l_copy": 2
+        }
+      },
+      "quality_metrics": {
+        "n_flagged": 41,
+        "n_rewrite": 2,
+        "grounded_rate": 0.0,
+        "format_valid_rate": 0.0,
+        "stub_rate": 0.0,
+        "n_verified_grounded": 0,
+        "n_format_valid": 0,
+        "n_stub": 0
+      },
+      "anchor_evidence_attribution": {
+        "n_rewrite_flagged": 2,
+        "n_anchor_grounded_scorable": 0,
+        "n_anchor_grounded": 0,
+        "anchor_evidence_attribution_rate": null
+      },
+      "rewrite_log": {
+        "n_flagged_test": 41,
+        "by_branch": {
+          "prism_probe_only_delete": 39,
+          "prism_l_copy": 2
+        },
+        "by_action": {
+          "delete": 39,
+          "rewrite": 2
+        },
+        "n_rewrite_with_quote_after": 2,
+        "cb_false_delete_among_flagged_clean": 0
+      }
+    },
+    "retail": {
+      "domain": "retail",
+      "gated_pm_rate_conservative": 0.004,
+      "cb_retention_conservative": 0.37874097007223945,
+      "claims_retained_mean": 0.747,
+      "tiered_routing": {
+        "tau": 0.05,
+        "n_total": 1011,
+        "n_flagged": 639,
+        "n_keep": 368,
+        "n_delete": 264,
+        "n_rewrite": 379,
+        "n_extractive_rewrite": 0,
+        "n_fallback_rewrite": 0,
+        "rewrite_rate_among_flagged": 0.593114241001565,
+        "delete_rate_among_flagged": 0.4131455399061033,
+        "by_pm_type_flagged": {
+          "other": {
+            "flagged": 598,
+            "delete": 225,
+            "rewrite": 373
+          },
+          "CEM": {
+            "flagged": 28,
+            "delete": 23,
+            "rewrite": 5
+          },
+          "AH": {
+            "flagged": 13,
+            "delete": 12,
+            "rewrite": 1
+          }
+        },
+        "by_branch": {
+          "prism_l_copy": 379,
+          "heuristic_anchor_miss": 104,
+          "prism_keep": 368,
+          "prism_probe_only_delete": 160
+        }
+      },
+      "quality_metrics": {
+        "n_flagged": 639,
+        "n_rewrite": 379,
+        "grounded_rate": 0.0,
+        "format_valid_rate": 0.9894459102902374,
+        "stub_rate": 0.0,
+        "n_verified_grounded": 0,
+        "n_format_valid": 375,
+        "n_stub": 0
+      },
+      "anchor_evidence_attribution": {
+        "n_rewrite_flagged": 379,
+        "n_anchor_grounded_scorable": 0,
+        "n_anchor_grounded": 0,
+        "anchor_evidence_attribution_rate": null
+      },
+      "rewrite_log": {
+        "n_flagged_test": 639,
+        "by_branch": {
+          "prism_l_copy": 379,
+          "heuristic_anchor_miss": 100,
+          "prism_probe_only_delete": 160
+        },
+        "by_action": {
+          "rewrite": 379,
+          "delete": 260
+        },
+        "n_rewrite_with_quote_after": 379,
+        "cb_false_delete_among_flagged_clean": 225
+      }
+    }
+  }
+}

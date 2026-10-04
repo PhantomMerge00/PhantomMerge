@@ -1,0 +1,42 @@
+{
+  "schema_version": "ccer_model_manifest_v1",
+  "default_manifest_id": "qwen3-32b_shopping_v1",
+  "manifests": {
+    "qwen3-32b_shopping_v1": {
+      "model_manifest_id": "qwen3-32b_shopping_v1",
+      "model_id": "Qwen/Qwen3-32B",
+      "weights_path": "${PHANTOM_MERGE_ROOT}/runtime/.cache/huggingface/hub/Qwen3-32B",
+      "model_revision_or_commit": null,
+      "tokenizer": "Qwen3Tokenizer",
+      "chat_template": "qwen3",
+      "thinking_enabled": false,
+      "precision": "bfloat16",
+      "decoding": {
+        "temperature": 0,
+        "top_p": 1.0,
+        "seed": 42,
+        "do_sample": false
+      },
+      "system_prompt_file": null,
+      "protocol_id": null,
+      "vllm": {
+        "base_url": "http://127.0.0.1:8003/v1",
+        "enable_thinking": false,
+        "vllm_version": null
+      },
+      "limitations": [
+        "original_prompt_token_ids never logged — exact_token_equality not_available",
+        "greedy replay may diverge if chat template backend differs from original vLLM run"
+      ],
+      "missing_fields": [
+        "model_revision_or_commit",
+        "vllm_version",
+        "original_prompt_token_ids"
+      ],
+      "exact_replay_claim": false
+    }
+  },
+  "source_metadata_files": [
+    "${PHANTOM_MERGE_ROOT}/data/rollouts/shopping/shopping_qwen3-32b_rollout/rollout.run_metadata.json"
+  ]
+}

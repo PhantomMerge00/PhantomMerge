@@ -1,0 +1,5 @@
+# Pinned vendor commit for PRISM-L+ (anthonywchen/RARR)
+# Cloned shallow from main at implementation time (2026-09-18).
+51a1a10fe5bada837a368f98cb55288ac5168c9e
+# Adaptation: Google Search → ObsTauRetriever (active_code/ccer/mechanism/obs_tau_retriever.py)
+# LLM: vLLM shim (active_code/ccer/mechanism/rarr_vllm_shim.py)
